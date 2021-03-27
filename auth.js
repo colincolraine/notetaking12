@@ -12,7 +12,7 @@ passport.serializeUser(function(foundUser, done) {
 
 passport.deserializeUser(function(id, done) {
     UserModel.findById(id, function(err, foundUser) {
-        done(err, user)
+        done(err, foundUser)
     })
 })
 
@@ -49,15 +49,11 @@ passport.use('local-login', new LocalStrategy({
 },
 function(req, email, password, done) {
     //process.nextTick(function() {
-        UserModel.findOne({'local.email': email}, function(err,foundUser) {
-            if(err)
-                return done(err)
-            if(!foundUser)
-                return done(null, false)
-            if (!foundUser.validPassword(password))
-                return done(null, false)
-            else
-                return done(null, foundUser)
+        UserModel.findOne({'email': email}, function(err,foundUser) {
+            if(err) {return done(err)}
+            if(!foundUser) {return done(null, false)}
+            if (!foundUser.validPassword(password)) {return done(null, false)}
+            return done(null, foundUser)
                 //var newUser = newUser()
                 //newUser.local.email = email
                 //newUser.local.password = newUser.generateHash(password)
