@@ -52,7 +52,7 @@ function(req, email, password, done) {
         UserModel.findOne({'email': email}, function(err,foundUser) {
             if(err) {return done(err)}
             if(!foundUser) {return done(null, false)}
-            if (!foundUser.validPassword(password)) {return done(null, false)}
+            if (foundUser.password != password) {return done(null, false)}
             return done(null, foundUser)
                 //var newUser = newUser()
                 //newUser.local.email = email
