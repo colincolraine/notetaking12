@@ -53,7 +53,7 @@ router.post('/login',
 router.post('/register',
 registerinputValidation,
 isEmailRegistered,
-hashPassword,
+//hashPassword,
 (req, res, next)=>{
     console.log(req.body.password)
     const newUser = new UserModel({
