@@ -14,7 +14,7 @@ router.get('/dashboard', (req, res) => {
     //var middleName = "Colin"
     //res.render('dashboard', {middleName: middleName})
     //res.render('dashboard', {firstName: req.body.firstName})
-    res.render('dashboard')
+    res.render('dashboard', {email: 'martha@gmail.com'})
 })
 
 router.post('/login',
