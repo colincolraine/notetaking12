@@ -52,6 +52,7 @@ function(req, email, password, done) {
     //process.nextTick(function() {
         UserModel.findOne({'email': email}, function(err,user) {
             console.log('*** in User.findOne callback')
+            console.log(email)
             if(err) {
                 console.log('*** err', err)
                 return done(err)
@@ -69,7 +70,10 @@ function(req, email, password, done) {
                 return done(null, false)
             }
             console.log('*** found?')
+            req.session.email = email
+            console.log(req.session.email)
             return done(null, user)
+            
                 //var newUser = newUser()
                 //newUser.local.email = email
                 //newUser.local.password = newUser.generateHash(password)
