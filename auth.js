@@ -57,11 +57,15 @@ function(req, email, password, done) {
                 return done(err)
             }
             if(!user) {
-                console.log('*** no username')
+                console.log('*** no email')
                 return done(null, false)
             }
             if (user.password != password) {
                 console.log('*** bad password')
+                console.log(user.password)
+                console.log('*** bad password2')
+                console.log(password)
+                console.log('*** bad password3')
                 return done(null, false)
             }
             console.log('*** found?')
