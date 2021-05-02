@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sending HTML email using PHP</title>
-</head>
-<body>
-<p>Hello World</p>
 <?php
          $to = "amdcolraine777@gmail.com";
          $subject = "This is subject";
@@ -28,5 +18,16 @@
             echo "Message could not be sent...";
          }
       ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sending HTML email using PHP</title>
+</head>
+<body>
+<p>Hello World</p>
 </body>
 </html>
