@@ -1,3 +1,23 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="amdcolraine777@gmail.com";
+    $subject="Online tuition enquiry";
+    <!--$sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $Age=$_POST["senderAge"];
+    $Stage=$_POST["stage"];
+    $message=$_POST["message"];-->
+
+    $mailBody="Subject: $subject";
+
+    mail($subject, $mailBody);
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
