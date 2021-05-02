@@ -7,6 +7,7 @@
     <title>Sending HTML email using PHP</title>
 </head>
 <body>
+<p>Hello World</p>
 <?php
          $to = "amdcolraine777@gmail.com";
          $subject = "This is subject";
