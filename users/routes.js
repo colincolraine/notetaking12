@@ -7,7 +7,7 @@ var path = require('path')
 const passport = require('../auth')
 
 router.post('/checkout', (req, res) => {
-    res.sendFile(path.join(process.cwd() + '/login.html'))
+    res.sendFile(path.join(process.cwd() + '/checkout.html'))
 })
 
 router.get('/dashboard', (req, res) => {
