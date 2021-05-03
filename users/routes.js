@@ -6,9 +6,14 @@ const chance = new Chance()
 var path = require('path')
 const passport = require('../auth')
 
-router.post('/checkout', (req, res) => {
+router.get('/checkout', (req, res) => {
     //put checkout.php in here
     res.sendFile(path.join(process.cwd() + '/checkout.html'))
+})
+
+router.post('/checkout', (req, res) => {
+    //put checkout.php in here
+    res.sendFile(path.join(process.cwd() + '/thank-you.html'))
 })
 
 router.get('/dashboard', (req, res) => {
