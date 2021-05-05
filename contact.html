@@ -1,0 +1,73 @@
+
+<?php
+
+if($_POST["submit"]) {
+    $recipient="amdcolraine777@gmail.com";
+    $subject="Online tuition enquiry";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $Age=$_POST["senderAge"];
+    $Stage=$_POST["stage"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\nAge: $Age\nStage: $Stage\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    <!--$thankYou="<p>Thank you! Your message has been sent.</p>";-->
+}
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact form to email</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body style="background-image:
+      linear-gradient(45deg, #ccc 25%, transparent 25%), 
+      linear-gradient(135deg, #ccc 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #ccc 75%),
+      linear-gradient(135deg, transparent 75%, #ccc 75%); background-size:25px 25px; background-position:0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;">
+    <div style= "position: absolute; top: 10%; bottom: 10%; left:10%; right: 10%; background-color: rgb(100,100,100);">
+        <div style="position: absolute; top: 0%; bottom: 10%; left:0%; right: 40%; min-height: 100%; background-color: rgb(242,242,242); text-align: center; display: inline-block;">
+        <img src="PngItem_2110920.png" alt="Flowers in Chania" style="position: relative; top: 10%; bottom: 10%; right: 45%; width: 50%; height: 30%;">
+        <div style="position: absolute; top: 0%; bottom: 0%; width: 60%; left: 25%;">
+        <p>Ogilvie Jerome</p>
+        <h2>Primary Tuition Online</h2>
+        <p>Enjoyable Effective Efficient</p>
+        <p>Low Cost Tuition at Pocket-Money Prices</p>
+        <p>Primary 1 - Primary 7</p>
+        <p>Age and Stage Appropriate</p>
+        <p>Small Group Classes</p>
+        <p>Free Pre Assessment</p>
+        <p>Taught by GTC Registered Primary Teachers</p>
+        <br>
+        <h2>Mobile: 07988258977</h2>
+        <h2>Email: ann@ogilviejerome.com</h2>
+        <img src="student-5675055_1920 (1).png" alt="Flowers in Chania" style="width: 60%; height: 30%;">
+        </div>
+        </div>
+        <div style="position: absolute; top: 0%; bottom: 10%; left:60%; right: 0%; min-height: 100%; background-color: rgb(180,180,180); text-align: center; display: inline-block;">
+        <h2 style= "color: white;">Take The Next Step</h2>
+        <form method="post" action="index.php">
+            <label style= "font-size: 150%; color: white;">Name:</label><br>
+            <input name="sender" style="width: 60%; padding: 5px;"><br><br>
+            <label style= "font-size: 150%; color: white;">Email address:</label><br>
+            <input name="senderEmail" style="width:60%; padding: 5px;"><br><br>
+            <label style= "font-size: 150%; color: white;">Age of Student:</label><br>
+            <input name="senderAge" style="width:60%; padding: 5px;"><br><br>
+            <label style= "font-size: 150%; color: white;">Stage at School:</label><br>
+            <input name="stage" style="width:60%; padding: 5px;"><br><br>
+            <label style= "font-size: 150%; color: white;">Details of Enquiry:</label><br>
+            <textarea name="message" rows="15" cols="30" style="width:60%; padding: 5px;"></textarea><br><br>
+            <input style= "font-size: 100%; padding: 5px; border-radius:10px; background-color: rgb(0,188,255); color:#fff;" type="submit" name="submit">
+        </form>
+        </div>
+    </div>
+
+</html>
