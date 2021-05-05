@@ -46,22 +46,3 @@ app.use('/users', userRoutes)
 app.listen(PORT, ()=>{
     console.log(`The app is running on http://localhost:${PORT}`)
 })
-
-//Nodemailer
-const form = document.getElementById("contact-form");
-
-const formEvent = form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  let mail = new FormData(form);
-  sendMail(mail);
-});
-
-const sendMail = (mail) => {
-  fetch("https://notetaking12.herokuapp.com/send", {
-    method: "post",
-    body: mail,
-  }).then((response) => {
-    return response.json();
-  });
-};
-//Nodemailer
