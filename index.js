@@ -59,7 +59,7 @@ app.use(cors({ origin: "*" }));
 app.use("/public", express.static(process.cwd() + "/public")); //make public static
 
 const transporter = nodemailer.createTransport({
-  service: "hotmail",
+  service: "smtp.live.com",
   auth: {
     user: "colinco83@hotmail.co.uk",
     pass: "actuary2011",
