@@ -23,9 +23,12 @@ const noteRoutes = require('./notes/routes')
 const userRoutes = require('./users/routes')
 
 const { username, password } = process.env
+const { EMAIL, PASS } = process.env
 
 console.log(username)
-console.log(username)
+console.log(password)
+console.log(EMAIL)
+console.log(PASS)
 
 mongoose.connect(`mongodb+srv://${username}:${password}@notetaking2.7q2bv.mongodb.net/notetaking2?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true})
 
@@ -58,11 +61,14 @@ app.use(cors({ origin: "*" }));
 
 app.use("/public", express.static(process.cwd() + "/public")); //make public static
 
+//EMAIL = amdcolraine777@gmail.com,
+//PASS = Christopher/1933/AMDG
+
 const transporter = nodemailer.createTransport({
   service: "smtp.live.com",
   auth: {
-    user: "colinco83@hotmail.co.uk",
-    pass: "actuary2011",
+    user: process.env.EMAIL,
+    pass: process.env.PASS,
   },
 });
 
@@ -86,7 +92,7 @@ app.post("/send", (req, res) => {
     console.log(data);
     const mail = {
       sender: `${data.sender} <${data.senderEmail}>`,
-      to: "amdcolraine777@gmail.com", // receiver email,
+      to: process.env.EMAIL, // receiver email,
       subject: data.senderAge,
       text: `${data.sender} <${data.senderEmail}> \n${data.message}`,
     };
