@@ -1,11 +1,8 @@
 //Nodemailer
 const router = require('express').Router()
-const cors = require("cors");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 require("dotenv").config();
-
-app.use(cors({ origin: "*" }));
 
 //EMAIL = amdcolraine777@gmail.com,
 //PASS = Christopher/1933/AMDG

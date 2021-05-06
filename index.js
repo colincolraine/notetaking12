@@ -9,6 +9,8 @@ const app = express()
 var path = require('path')
 const passport = require('./auth')
 
+const cors = require("cors");
+
 const PORT = process.env.PORT || 4000
 
 const noteRoutes = require('./notes/routes')
@@ -49,6 +51,8 @@ app.use('/notes', noteRoutes)
 app.use('/users', userRoutes)
 app.use('/public', publicRoutes)
 //app.use("/public", express.static(process.cwd() + "/public")); //make public static
+
+app.use(cors({ origin: "*" }));
 
 app.listen(PORT, ()=>{
     console.log(`The app is running on http://localhost:${PORT}`)
