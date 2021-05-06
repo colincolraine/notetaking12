@@ -59,7 +59,7 @@ app.use('/users', userRoutes)
 // cors
 app.use(cors({ origin: "*" }));
 
-app.use("/public", express.static(process.cwd() + "/public")); //make public static
+//app.use("/public", express.static(process.cwd() + "/public")); //make public static
 
 //EMAIL = amdcolraine777@gmail.com,
 //PASS = Christopher/1933/AMDG
@@ -81,7 +81,7 @@ transporter.verify(function (error, success) {
   }
 });
 
-app.post("/public/send", (req, res) => {
+app.post("/send", (req, res) => {
   let form = new multiparty.Form();
   let data = {};
   form.parse(req, function (err, fields) {

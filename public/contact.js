@@ -8,7 +8,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const sendMail = (mail) => {
-  fetch("https://notetaking12.herokuapp.com/public/send", {
+  fetch("https://notetaking12.herokuapp.com/send", {
     method: "post",
     body: mail,
   }).then((response) => {
