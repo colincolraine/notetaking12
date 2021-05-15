@@ -406,7 +406,7 @@ if($_POST["submit"]) {
           //document.getElementById("demo").innerHTML = "Hello World";
           document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
           db.notetaking2.users.updateOne(
-            { firstName: "Jarrad" },
+            { _id: ObjectId("609febd5fdee49001544da54") },
             {
               $set: { class: "History" }
             }
