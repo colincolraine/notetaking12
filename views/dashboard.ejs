@@ -26,6 +26,7 @@ if($_POST["submit"]) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
+    <script src="../index.js"></script>
 </head>
 <body>
     <p><%= email %></p>
@@ -408,7 +409,7 @@ if($_POST["submit"]) {
           db.notetaking2.users.updateOne(
             { _id: ObjectId("609febd5fdee49001544da54") },
             {
-              $set: { class: "History" }
+              $set: { email: "jarrad@gmail.com" }
             }
           )
         //this line below includes the class in the checkout box when selected
