@@ -411,8 +411,8 @@ if($_POST["submit"]) {
           MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           var dbo = db.db("notetaking2");
-          var myquery = { firstName: "jarrad" };
-          var newvalues = { $set: { email: "jarrad@gmail.com" } };
+          var myquery = { _id: ObjectId("609febd5fdee49001544da54") };
+          var newvalues = { $set: { firstName: "jarred" } };
           dbo.collection("notetaking2.users").updateOne(myquery, newvalues, function(err, res) {
           if (err) throw err;
           console.log("1 document updated");
