@@ -18,6 +18,10 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
+    class: {
+        type: String,
+        required: true
+    },
     accessToken:{
         type: String
     },
