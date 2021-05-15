@@ -381,21 +381,20 @@ if($_POST["submit"]) {
         <!--<button style= "height: 40px; margin-left: 45%;"><p id="checkout"></p></button>-->
         
         <!-- <div style= "border: 1px solid rgba(0, 0, 0, .2); width: 5%; margin-left: 45%; text-align: center;"><button style= "height: 40px";><p id="checkout"></p></button></div>-->
-        <form method="get" action="/users/checkout">
-          <div>
-            <label for="say">What greeting do you want to say?</label>
-            <input name="say" id="say" value="Hi">
-          </div>
-          <div>
-            <label for="to">Who do you want to say it to?</label>
-            <input name="to" value="Mom">
-          </div>
-          <div>
+        <!--<form method="get" action="/users/checkout">-->
+          <!--<label class="register__label register__label--email register__label--margin-right">firstName<input type="text" name="firstName" value="" class="register__input" autocomplete="off"></label>
+          <br>
+          <label class="register__label register__label--email">lastName<input type="text" name="lastName" value="" class="register__input" autocomplete="off"></label>
+          <br>
+          <label class="register__label register__label--details">email<input type="email" name="email" value="" class="register__input" autocomplete="new-password"></label>
+          <br>
+          <label class="register__label register__label--email">password<input type="password" name="password" value="" class="register__input" autocomplete="off"></label>
+          <br>
     
-          <!--<input id="myInput" name="message1" value="Swag" />-->
-          <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;">
-        </form>
-        <!--<input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">-->
+          <input id="myInput" name="message1" value="Swag" />-->
+          <!--<input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;">-->
+        <!--</form>-->
+        <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">
         <!--<button name="checkout" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()"></button>-->
 
 
@@ -404,11 +403,11 @@ if($_POST["submit"]) {
         <script>
         function checkoutFunction() {
         //this line below includes the class in the checkout box when selected
-        var Colin
-        Colin = document.getElementById("checkout2").innerHTML;
-        document.getElementById("myInput").value = Colin
+        //var Colin
+        //Colin = document.getElementById("checkout2").innerHTML;
+        //document.getElementById("myInput").value = Colin
         //this line below highlights the checkout button when this class has been selected
-        console.log(document.getElementById("myInput").value)
+        //console.log(document.getElementById("myInput").value)
         }
         function myFunction1() {
           document.getElementById("demo1").innerHTML = "Estimation and rounding";
