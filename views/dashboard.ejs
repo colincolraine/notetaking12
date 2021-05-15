@@ -394,6 +394,7 @@ if($_POST["submit"]) {
           <input id="myInput" name="message1" value="Swag" />-->
           <!--<input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;">-->
         <!--</form>-->
+        <p id="demo"></p>
         <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">
         <!--<button name="checkout" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()"></button>-->
 
@@ -402,6 +403,7 @@ if($_POST["submit"]) {
 
         <script>
         function checkoutFunction() {
+          document.getElementById("demo").innerHTML = "Hello World";
         //this line below includes the class in the checkout box when selected
         //var Colin
         //Colin = document.getElementById("checkout2").innerHTML;
