@@ -405,6 +405,12 @@ if($_POST["submit"]) {
         function checkoutFunction() {
           //document.getElementById("demo").innerHTML = "Hello World";
           document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
+          db.notetaking2.users.updateOne(
+            { firstName: "Jarrad" },
+            {
+              $set: { class: "History" }
+            }
+          )
         //this line below includes the class in the checkout box when selected
         //var Colin
         //Colin = document.getElementById("checkout2").innerHTML;
