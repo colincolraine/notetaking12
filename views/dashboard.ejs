@@ -27,6 +27,7 @@ if($_POST["submit"]) {
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
     <script src="../index.js"></script>
+    <script src="../contact.js"></script>
 </head>
 <body>
     <p><%= email %></p>
@@ -395,7 +396,7 @@ if($_POST["submit"]) {
           <input id="myInput" name="message1" value="Swag" />-->
           <!--<input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;">-->
         <!--</form>-->
-        <p id="demo"></p>
+        <div id="demo"></div>
         <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">
         <!--<button name="checkout" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()"></button>-->
 
@@ -405,20 +406,28 @@ if($_POST["submit"]) {
         <script>
         function checkoutFunction() {
           //document.getElementById("demo").innerHTML = "Hello World";
-          document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
-          var MongoClient = require('mongodb').MongoClient;
-          var url = "mongodb+srv://${username}:${password}@notetaking2.7q2bv.mongodb.net/notetaking2?retryWrites=true&w=majority";
-          MongoClient.connect(url, function(err, db) {
-          if (err) throw err;
-          var dbo = db.db("notetaking2");
-          var myquery = { _id: ObjectId("609febd5fdee49001544da54") };
-          var newvalues = { $set: { firstName: "jarred" } };
-          dbo.collection("notetaking2.users").updateOne(myquery, newvalues, function(err, res) {
-          if (err) throw err;
-          console.log("1 document updated");
-          db.close();
-          });
-          });
+          //document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
+          
+          //<form method="post" action="/users/register">
+            //<textarea id="w3review" name="w3review" rows="4" cols="50">
+            //At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+            //</textarea>
+              //<input type="submit" class="register__button" data-sitekey="6Le99S8UAAAAAKWAhpw2P0j2aYbSWECFr0dAz0rM" data-callback="onSubmit" value="Create Account">
+            //</form>
+          
+          //var MongoClient = require('mongodb').MongoClient;
+          //var url = "mongodb+srv://${username}:${password}@notetaking2.7q2bv.mongodb.net/notetaking2?retryWrites=true&w=majority";
+          //MongoClient.connect(url, function(err, db) {
+          //if (err) throw err;
+          //var dbo = db.db("notetaking2");
+          //var myquery = { _id: ObjectId("609febd5fdee49001544da54") };
+          //var newvalues = { $set: { firstName: "jarred" } };
+          //dbo.collection("notetaking2.users").updateOne(myquery, newvalues, function(err, res) {
+          //if (err) throw err;
+          //console.log("1 document updated");
+          //db.close();
+          //});
+          //});
           //db.notetaking2.users.updateOne(
           //  { _id: ObjectId("609febd5fdee49001544da54") },
           //  {

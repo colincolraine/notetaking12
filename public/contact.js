@@ -1,3 +1,10 @@
+const selectElement = document.querySelector('checkout2');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('demo');
+  result.textContent = `You like ${event.target.value}`;
+});
+
 //Nodemailer
 //const form = document.getElementById("contact-form");
 
