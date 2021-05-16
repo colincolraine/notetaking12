@@ -1,5 +1,5 @@
 function checkoutFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+  document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
 }
 //document.getElementById("checkout22").addEventListener("click", function() {
 //  document.getElementById("demo").innerHTML = "Hello World";
