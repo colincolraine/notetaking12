@@ -1,4 +1,4 @@
-document.getElementById("checkout").addEventListener("click", function() {
+document.getElementById("checkout22").addEventListener("click", function() {
   document.getElementById("demo").innerHTML = "Hello World";
 });
 
