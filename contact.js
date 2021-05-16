@@ -1,6 +1,9 @@
-document.getElementById("checkout22").addEventListener("click", function() {
+function checkoutFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
-});
+}
+//document.getElementById("checkout22").addEventListener("click", function() {
+//  document.getElementById("demo").innerHTML = "Hello World";
+//});
 
 //const selectElement = document.querySelector('#checkout2');
 
