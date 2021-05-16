@@ -1,6 +1,19 @@
 function checkoutFunction() {
-  document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
-}
+  //document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
+  var MongoClient = require('mongodb').MongoClient;
+  var url = "mongodb+srv://${username}:${password}@notetaking2.7q2bv.mongodb.net/notetaking2?retryWrites=true&w=majority";
+  MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("notetaking2");
+    var myquery = { _id: ObjectId("609febd5fdee49001544da54") };
+    var newvalues = { $set: { firstName: "jarred" } };
+    dbo.collection("notetaking2.users").updateOne(myquery, newvalues, function(err, res) {
+    if (err) throw err;
+    console.log("1 document updated");
+    db.close();
+    });
+    });
+  }
 //document.getElementById("checkout22").addEventListener("click", function() {
 //  document.getElementById("demo").innerHTML = "Hello World";
 //});
