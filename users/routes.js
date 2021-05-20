@@ -14,7 +14,7 @@ const passport = require('../auth')
 
 router.post('/checkout', (req, res, next)=>{
     const newUser2 = new UserModel2({
-        class: 'History'
+        class: req.body.class1
     })
 
     newUser2
