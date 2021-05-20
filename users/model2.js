@@ -13,6 +13,6 @@ const userSchema2 = new Schema({
     }
 })
 
-const UserModel2 = mongoose.model('User', userSchema2)
+const UserModel2 = mongoose.model('Class', userSchema2)
 
 module.exports = UserModel2
