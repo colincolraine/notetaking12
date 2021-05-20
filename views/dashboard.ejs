@@ -27,7 +27,7 @@ if($_POST["submit"]) {
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
     <script src="../index.js"></script>
-    <script src="../users/contact.js"></script>
+    <!--<script src="../users/contact.js"></script>-->
 </head>
 <body>
     <p><%= email %></p>
@@ -398,7 +398,7 @@ if($_POST["submit"]) {
         <!--</form>-->
         <p id="demo"></p>
         <!--<button id="checkout22" style= "height: 40px; margin-left: 45%;">Submit</button>-->
-        <!--<input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">-->
+        <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">
         <!--<button name="checkout" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()"></button>-->
         
         <form method="post" action="/users/checkout">
@@ -407,12 +407,12 @@ if($_POST["submit"]) {
               <option value="volvo">Estimation & Rounding</option>
               <option value="saab">Number Processes</option>
             </select>
-            <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;">
+            <input name="submit2" type="submit" id="checkout25" style= "height: 40px; margin-left: 45%;">
         </form>
 
 
         <script>
-        //function checkoutFunction() {
+        function checkoutFunction() {
           //document.getElementById("demo").innerHTML = "Hello World";
           //document.getElementById("demo").innerHTML = document.getElementById("checkout2").innerHTML;
           
@@ -448,10 +448,10 @@ if($_POST["submit"]) {
         //document.getElementById("myInput").value = Colin
         //this line below highlights the checkout button when this class has been selected
         //console.log(document.getElementById("myInput").value)
-        //}
+        }
         function myFunction1() {
           document.getElementById("demo1").innerHTML = "Estimation and rounding";
-          document.getElementById("checkout").innerHTML = "Checkout";
+          //document.getElementById("checkout").innerHTML = "Checkout";
         }
         function myFunction2() {
           document.getElementById("demo2").innerHTML = "Grammar";
@@ -459,7 +459,7 @@ if($_POST["submit"]) {
         }
         function myFunction3() {
           document.getElementById("demo3").innerHTML = "Estimation and rounding";
-          document.getElementById("checkout").innerHTML = "Checkout";
+          //document.getElementById("checkout").innerHTML = "Checkout";
         }
         function myFunction4() {
           document.getElementById("demo4").innerHTML = "Grammar";
@@ -467,7 +467,7 @@ if($_POST["submit"]) {
         }
         function myFunction5() {
           document.getElementById("demo5").innerHTML = "Estimation and rounding";
-          document.getElementById("checkout").innerHTML = "Checkout";
+          //document.getElementById("checkout").innerHTML = "Checkout";
         }
         function myFunction6() {
           document.getElementById("demo6").innerHTML = "Grammar";
@@ -475,7 +475,7 @@ if($_POST["submit"]) {
         }
         function myFunction7() {
           document.getElementById("demo7").innerHTML = "Number processes";
-          document.getElementById("checkout").innerHTML = "Checkout";
+          //document.getElementById("checkout").innerHTML = "Checkout";
         }
         function myFunction8() {
           document.getElementById("demo8").innerHTML = "Writing";
@@ -483,7 +483,7 @@ if($_POST["submit"]) {
         }
         function myFunction9() {
           document.getElementById("demo9").innerHTML = "Number processes";
-          document.getElementById("checkout").innerHTML = "Checkout";
+          //document.getElementById("checkout").innerHTML = "Checkout";
         }
         function myFunction10() {
           document.getElementById("demo10").innerHTML = "Writing";
@@ -491,7 +491,7 @@ if($_POST["submit"]) {
         }
         function myFunction11() {
           document.getElementById("demo11").innerHTML = "Number processes";
-          document.getElementById("checkout").innerHTML = "Checkout";
+          //document.getElementById("checkout").innerHTML = "Checkout";
         }
         function myFunction12() {
           document.getElementById("demo12").innerHTML = "Writing";
