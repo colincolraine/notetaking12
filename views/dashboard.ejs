@@ -398,10 +398,17 @@ if($_POST["submit"]) {
         <!--</form>-->
         <p id="demo"></p>
         <!--<button id="checkout22" style= "height: 40px; margin-left: 45%;">Submit</button>-->
-        <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">
+        <!--<input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()">-->
         <!--<button name="checkout" id="checkout" style= "height: 40px; margin-left: 45%;" onclick="checkoutFunction()"></button>-->
         
-
+        <form method="post" action="/users/checkout">
+            <label for="cars">Choose a class:</label>
+            <select id="cars" name="cars">
+              <option value="volvo">Estimation & Rounding</option>
+              <option value="saab">Number Processes</option>
+            </select>
+            <input name="submit" type="submit" id="checkout" style= "height: 40px; margin-left: 45%;">
+        </form>
 
 
         <script>

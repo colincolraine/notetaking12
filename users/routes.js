@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const UserModel = require('./model')
+const UserModel2 = require('./model2')
 const bcrypt = require('bcryptjs')
 const Chance = require('chance')
 const chance = new Chance()
@@ -11,10 +12,26 @@ const passport = require('../auth')
 //    res.sendFile(path.join(process.cwd() + '/checkout.html'))
 //})
 
-//router.post('/checkout', (req, res) => {
-    //put checkout.php in here
-//    res.sendFile(path.join(process.cwd() + '/thank-you.html'))
-//})
+router.post('/checkout', (req, res) => {
+    const newUser2 = new UserModel2({
+        class: 'History'
+    })
+
+    newUser2
+        .save()
+        .then((document)=>{
+            if(document){
+                res.sendFile(path.join(process.cwd() + '/thank-you.html'))
+            }else{
+                res.send('document did not save')
+            }
+        })
+        .catch((err)=>{
+            console.log(err)
+            res.send('Error 1 happened')
+        })
+    
+})
 
 router.get('/dashboard', (req, res) => {
     //res.render(path.join(__dirname, 'dashboard.html'))
