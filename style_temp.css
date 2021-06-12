@@ -1,0 +1,70 @@
+.sticky-wrapper {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+  
+.sticky-wrapper .site-navbar {
+  background: #fff;
+}
+
+.sticky-wrapper .site-navbar {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.site-navbar {
+  margin-bottom: 0px;
+  z-index: 1999;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  height: 200px;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-size: 33px;
+  height: 50%;
+  width: 27%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*.navbar-brand>img {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  color: black;
+}*/
+
+/*.logo-heading{
+  position: absolute;
+  top: 50%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  color: black;
+}*/
+
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

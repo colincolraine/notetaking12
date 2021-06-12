@@ -1,34 +1,44 @@
-.sticky-wrapper {
-  position: relative;
-  z-index: 100;
-  width: 100%;
-}
+.box {
+    width: 100%;
+    border: 2px dashed;
+    height: 422px;
+    overflow-x: scroll;
+    scroll-behavior: smooth; /* <--- */
+  }
   
-.sticky-wrapper .site-navbar {
-  background: #fff;
+  #boxChild {
+    /* margin: 600px 0 300px; */
+    margin: 0 0 2px;
+    width: 200%;
+    height: 40px;
+    background: green;
+    display: inline-block;
+  }
+
+  .foo {
+    width: 20%;
+    height: 60px;
+    margin: 0px;
+    border: 1px solid rgba(0, 0, 0, .2);
 }
 
-.sticky-wrapper .site-navbar {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+.fool {
+  width: 20%;
+  height: 60px;
+  margin: 0px;
+  border: 1px solid rgba(0, 0, 0, .2);
 }
 
-.site-navbar {
-  margin-bottom: 0px;
-  z-index: 1999;
-  position: relative;
-  width: 100%;
-  padding: 1rem;
+.foop {
+  width: 20%;
+  height: 60px;
+  margin: 0px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  display: inline-flex;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.fool:hover {
+  background-color: yellow;
 }
 
 .container-fluid {
@@ -67,4 +77,37 @@ img {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.sticky-wrapper {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+  
+.sticky-wrapper .site-navbar {
+  background: #fff;
+}
+
+.sticky-wrapper .site-navbar {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.site-navbar {
+  margin-bottom: 0px;
+  z-index: 1999;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
