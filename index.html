@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link rel = "stylesheet" href = "style.css">
     <style>
 body { 
-    padding-top: 140px; 
+    padding-top: 180px; 
 }
 
-        ul {
+        /*ul {
           list-style-type: none;
           margin: 0;
           padding: 0;
           overflow: hidden;
           position: fixed;
-          /*position:absolute;*/
+       
           top:10%;
           left:37%;
           right:37%;
@@ -31,7 +33,7 @@ body {
           display: block;
           padding: 13px;
           background-color: white;
-        }
+        }*/
 
         .fixed-nav-bar {
   position: fixed;
@@ -43,7 +45,7 @@ body {
   background-color: white;
 }
 
-.dropdown {
+/*.dropdown {
   float: left;
   overflow: hidden;
 }
@@ -74,30 +76,175 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}*/
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+.main {
+  /*position: fixed;
+  top:10%;
+  left:34%;
+  right:34%;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;*/
+  /*display: block;*/
+  /*display: block;*/
+    /*display:table;*/
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;*/
+  /*margin-left: 25%;
+  margin-right: 25%;*/
+  position: fixed;
+          top: 11%;
+          background-color: rgb(21, 22, 22);
+}
+
+.main2 {
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+  position: fixed;
+          top: 17%;
+          background-color: rgb(21, 22, 22);
+}
+
+.trevor {
+  color: #fff;
+  background: rgb(255, 255, 255);
+  /*display:table-cell;*/
+  width: 20%;
+  height:100%;
+  float: left;
+  padding: 13px;
+  /*position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;*/
+}
+  
+li a {
+  color: rgb(9, 4, 88);
+  width: 100%;
+  font-family: 'Caveat';
+  font-size: 150%;
+  font-weight: bold;
+}
+
+li:hover,
+li:focus-within {
+  background: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  /*min-width: 5rem;*/
+  /*position: relative;*/
+  /*transition: all 0.5s ease;*/
+  width:100%;
+  /*margin-top: 1rem;*/
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  /*clear: both;
+  width: 100%;
+  height:6%;*/
+  /*min-width: 20rem;*/
+  /*list-style-type: none;
+  float:left;*/
+}
+
+.center {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
 }
         </style>
 </head>
 <body>
-    <!--<div style= "position: fixed; left:1%; right: 1%; top: 1%; bottom: 1%; background-color: yellow">-->
+    <!--<div style= "position: fixed; top: 1%; bottom:90%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">-->
       <nav class="fixed-nav-bar">
-        <div style= "position: fixed; top: 1%; bottom:90%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">
-          <img src="OgilvieJerome.jpeg" alt="Smiley face">
-        </div>
+          <img src="OgilvieJerome.jpeg" alt="Smiley face" style= " 
+          display: block;
+          margin-left: 25%;
+          margin-right: 25%;
+          position:fixed;
+          top: 1%;
+          background-color: rgb(255, 255, 255);
+          width: 50%;
+          height: 13%">
         <!--<div style= "position: fixed; left:1%; right: 1%; background-color: white">-->
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="AboutUs.html">About Us</a></li>
-          <li><a href="grouptutoring.html">Group Tutoring</a></li>
-          <li><a href="grouptutoring.html">Full Curriculum</a></li>
-          <li><a href="/public/contact.html">Contact Us</a></li>
+        <ul class="main">
+          <li class="trevor"><a href="draft.html">Home</a></li>
+          <li class="trevor"><a href="AboutUs.html">About Us</a></li>
+          <li class="trevor"><a href="grouptutoring.html">This week's classes</a></li>
+          <li class="trevor"><a>Full Curriculum</a>
+            <ul class="main2">
+              <li class="trevor"><a href = "p3curriculum.html">Primary 3</a></li>
+              <li class="trevor"><a href = "p4curriculum.html">Primary 4</a></li>
+              <li class="trevor"><a href = "p5curriculum.html">Primary 5</a></li>
+              <li class="trevor"><a href = "p6curriculum.html">Primary 6</a></li>
+              <li class="trevor"><a href = "p7curriculum.html">Primary 7</a></li>
+            </ul>
+          </li>
+          <li class="trevor"><a href="public/contact.html">Contact Us</a></li>
         </ul>
+
+        <div style= "position: fixed; top: 5%; bottom: 90%; right: 0%; background-color: rgb(252, 252, 252);">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Create Account</a></li>
+          <li><a href="public/contact.html">Contact Us</a></li>
+        </div>
+      
       </nav>
-            <div style= "margin: auto; width: 40%; padding: 10px;">
-              <img src="Home1.jpeg" alt="Smiley face">
+          
+            <div>
+              <img src="Home7.jpeg" alt="Smiley face" class="center">
+              <img src="Home2.jpeg" alt="Smiley face" class="center">
+              <img src="Home3.jpeg" alt="Smiley face" class="center">
+              <img src="Home4.jpeg" alt="Smiley face" class="center">
+              <img src="Home5.jpeg" alt="Smiley face" class="center">
+              <img src="Home6.jpeg" alt="Smiley face" class="center">
             </div>
             <!--<div style= "position: fixed; top: 1000px; left:30%; right: 30%; background-color: rgb(255, 255, 255);">-->
-                <div style= "margin: auto; width: 40%; padding: 10px;">
-              <img src="Home2.jpeg" alt="Smiley face">
+            <!--<div>
+              <img src="Home2.jpeg" alt="Smiley face" class="center">
             </div>
             <div style= "margin: auto; width: 40%; padding: 10px;">
                 <img src="Home3.jpeg" alt="Smiley face">
@@ -110,8 +257,8 @@ body {
                   </div>
                   <div style= "margin: auto; width: 40%; padding: 10px;">
                       <img src="Home6.jpeg" alt="Smiley face">
-                    </div>
+                    </div>-->
         <!--</div>-->
-    <!--</div>-->
+        
 </body>
 </html>
