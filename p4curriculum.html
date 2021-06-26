@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link rel = "stylesheet" href = "style.css">
+    <style>
+body { 
+    padding-top: 180px; 
+}
+
+        /*ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          position: fixed;
+       
+          top:10%;
+          left:37%;
+          right:37%;
+          background-color: white;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          padding: 13px;
+          background-color: white;
+        }*/
+
+        .fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 170px;
+  background-color: white;
+}
+
+/*.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+.main {
+  /*position: fixed;
+  top:10%;
+  left:34%;
+  right:34%;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;*/
+  /*display: block;*/
+  /*display: block;*/
+    /*display:table;*/
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;*/
+  /*margin-left: 25%;
+  margin-right: 25%;*/
+  position: fixed;
+          top: 11%;
+          background-color: rgb(21, 22, 22);
+}
+
+.main2 {
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+  position: fixed;
+          top: 17%;
+          background-color: rgb(21, 22, 22);
+}
+
+.trevor {
+  color: #fff;
+  background: rgb(255, 255, 255);
+  /*display:table-cell;*/
+  width: 20%;
+  height:100%;
+  float: left;
+  padding: 13px;
+  /*position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;*/
+}
+  
+li a {
+  color: rgb(9, 4, 88);
+  width: 100%;
+  font-family: 'Caveat';
+  font-size: 150%;
+  font-weight: bold;
+}
+
+li:hover,
+li:focus-within {
+  background: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  /*min-width: 5rem;*/
+  /*position: relative;*/
+  /*transition: all 0.5s ease;*/
+  width:100%;
+  /*margin-top: 1rem;*/
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  /*clear: both;
+  width: 100%;
+  height:6%;*/
+  /*min-width: 20rem;*/
+  /*list-style-type: none;
+  float:left;*/
+}
+
+.center {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+        </style>
+</head>
+<body>
+    <!--<div style= "position: fixed; top: 1%; bottom:90%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">-->
+      <nav class="fixed-nav-bar">
+          <img src="OgilvieJerome.jpeg" alt="Smiley face" style= " 
+          display: block;
+          margin-left: 25%;
+          margin-right: 25%;
+          position:fixed;
+          top: 1%;
+          background-color: rgb(255, 255, 255);
+          width: 50%;
+          height: 13%">
+        <!--<div style= "position: fixed; left:1%; right: 1%; background-color: white">-->
+        <ul class="main">
+          <li class="trevor"><a href="draft.html">Home</a></li>
+          <li class="trevor"><a href="AboutUs.html">About Us</a></li>
+          <li class="trevor"><a href="grouptutoring.html">This week's classes</a></li>
+          <li class="trevor"><a>Full Curriculum</a>
+            <ul class="main2">
+              <li class="trevor"><a href = "p3curriculum.html">Primary 3</a></li>
+              <li class="trevor"><a href = "p4curriculum.html">Primary 4</a></li>
+              <li class="trevor"><a href = "p5curriculum.html">Primary 5</a></li>
+              <li class="trevor"><a href = "p6curriculum.html">Primary 6</a></li>
+              <li class="trevor"><a href = "p7curriculum.html">Primary 7</a></li>
+            </ul>
+          </li>
+          <li class="trevor"><a href="public/contact.html">Contact Us</a></li>
+        </ul>
+
+        <div style= "position: fixed; top: 5%; bottom: 90%; right: 0%; background-color: rgb(252, 252, 252);">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="public/contact.html">Contact Us</a></li>
+          </div>
+      
+      </nav>
+          
+      <div style= "position: fixed; top: 20%; left: 5%; right: 5%; background-color: rgb(255, 255, 255);">
+        <a href='#boxChild'><h2>Primary 4 Classes</h2></a>
+        <div class='box'>
+        <div id='boxChild1'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+        <div class = "foo"><p>Maths</p></div>
+        <div class = "foo"><p>English</p></div>
+        <div class = "foo"><p>Other</p></div>
+        </div>
+        </div>
+        <!--<div id='boxChild'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+        <div class = "foop">
+        <div class= "fool"><p></p>4pm</div>
+        <div class= "fool"><p>4.40pm</p></div>
+        <div class= "fool"><p>5.20pm</p></div>
+        <div class= "fool"><p>6pm</p></div>
+        <div class= "fool"><p>6.40pm</p></div>
+        </div>
+        <div class = "foop">
+        <div class= "fool"><p></p>4pm</div>
+        <div class= "fool"><p>4.40pm</p></div>
+        <div class= "fool"><p>5.20pm</p></div>
+        <div class= "fool"><p>6pm</p></div>
+        <div class= "fool"><p>6.40pm</p></div>
+        </div>
+        <div class = "foop">
+        <div class= "fool"><p></p>4pm</div>
+        <div class= "fool"><p>4.40pm</p></div>
+        <div class= "fool"><p>5.20pm</p></div>
+        <div class= "fool"><p>6pm</p></div>
+        <div class= "fool"><p>6.40pm</p></div>
+        </div>
+        </div>
+        </div>-->
+        <div id='boxChild1'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+        <div class = "foop">
+        <div class= "fool"><a href="fractions.html">Fractions</a></div>
+        <div class= "fool"><a href="fractions.html">Estimation and rounding</a></div>
+        <div class= "fool"><a href="fractions.html">Number processes</a></div>
+        <div class= "fool"><a href="fractions.html">Negative numbers</a></div>
+        <div class= "fool"><a href="fractions.html">Factors</a></div>
+        </div>
+        <div class = "foop">
+            <div class= "fool"><a href="fractions.html">Verbs</a></div>
+            <div class= "fool"><a href="fractions.html">Adjectives</a></div>
+            <div class= "fool"><a href="fractions.html">Nouns</a></div>
+            <div class= "fool"><a href="fractions.html">Pronouns</a></div>
+            <div class= "fool"><a href="fractions.html">Adverbs</a></div>
+        </div>
+        <div class = "foop">
+            <div class= "fool"><a href="fractions.html">Spanish</a></div>
+            <div class= "fool"><a href="fractions.html">Etiquette</a></div>
+            <div class= "fool"></div>
+            <div class= "fool"></div>
+            <div class= "fool"></div>
+        </div>
+        </div>
+        </div>
+        <div id='boxChild1'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Equations</a></div>
+                <div class= "fool"><a href="fractions.html">Multiples</a></div>
+                <div class= "fool"><a href="fractions.html">Decimals</a></div>
+                <div class= "fool"><a href="fractions.html">Linear equations</a></div>
+                <div class= "fool"><a href="fractions.html">Inequalities</a></div>
+            </div>
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Direct and Indirect Speech</a></div>
+                <div class= "fool"><a href="fractions.html">Present Participle</a></div>
+                <div class= "fool"><a href="fractions.html">Infinitive</a></div>
+                <div class= "fool"><a href="fractions.html">Interrogative</a></div>
+                <div class= "fool"><a href="fractions.html">Passive</a></div>
+            </div>
+        <div class = "foop">
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        </div>
+        </div>
+        </div>
+        <div id='boxChild1'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Coordinates</a></div>
+                <div class= "fool"><a href="fractions.html">Perimeter</a></div>
+                <div class= "fool"><a href="fractions.html">Volume</a></div>
+                <div class= "fool"><a href="fractions.html">Surface Area</a></div>
+                <div class= "fool"><a href="fractions.html">Graphs</a></div>
+            </div>
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Speaking</a></div>
+                <div class= "fool"><a href="fractions.html">Punctuation 1</a></div>
+                <div class= "fool"><a href="fractions.html">Punctuation 2</a></div>
+                <div class= "fool"><a href="fractions.html">Punctuation 3</a></div>
+                <div class= "fool"><a href="fractions.html">Relative Clauses</a></div>
+            </div>
+        <div class = "foop">
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        </div>
+        </div>
+        </div>
+        <div id='boxChild1'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Complex Numbers</a></div>
+                <div class= "fool"><a href="fractions.html">Limits</a></div>
+                <div class= "fool"><a href="fractions.html">Matrices</a></div>
+                <div class= "fool"><a href="fractions.html">Shapes</a></div>
+                <div class= "fool"><a href="fractions.html">Area</a></div>
+            </div>
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Reading</a></div>
+                <div class= "fool"><a href="fractions.html">Spelling</a></div>
+                <div class= "fool"><a href="fractions.html">Tenses</a></div>
+                <div class= "fool"><a href="fractions.html">Vocabulary</a></div>
+                <div class= "fool"><a href="fractions.html">Writing 1</a></div>
+            </div>
+        <div class = "foop">
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        </div>
+        </div>
+        </div>
+        <div id='boxChild1'>
+        <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Roots and Powers</a></div>
+                <div class= "fool"><a href="fractions.html">Mean Value</a></div>
+                <div class= "fool"><a href="fractions.html">Factors</a></div>
+                <div class= "fool"><a href="fractions.html">Integrals</a></div>
+                <div class= "fool"><a href="fractions.html">Sequences</a></div>
+            </div>
+            <div class = "foop">
+                <div class= "fool"><a href="fractions.html">Writing 2</a></div>
+                <div class= "fool"><a href="fractions.html">Writing 3</a></div>
+                <div class= "fool"><a href="fractions.html">Factors</a></div>
+                <div class= "fool"><a href="fractions.html">Integrals</a></div>
+                <div class= "fool"><a href="fractions.html">Sequences</a></div>
+            </div>
+        <div class = "foop">
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        <div class= "fool"><p></p></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+            <!--<div style= "margin: auto; width: 45%; padding: 10px;">
+              <img src="p3punctuation1.jpeg" alt="Smiley face">
+            </div>-->
+    <!--</div>-->
+         
+</body>
+</html>

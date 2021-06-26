@@ -5,11 +5,28 @@
     overflow-x: scroll;
     scroll-behavior: smooth; /* <--- */
   }
+
+  .box_new {
+    width: 100%;
+    border: 2px dashed;
+    height: 422px;
+    /*overflow-x: scroll;
+    scroll-behavior: smooth;*/ /* <--- */
+  }
   
   #boxChild {
     /* margin: 600px 0 300px; */
     margin: 0 0 2px;
     width: 200%;
+    height: 40px;
+    background: green;
+    display: inline-block;
+  }
+
+  #boxChild_new {
+    /* margin: 600px 0 300px; */
+    margin: 0 0 2px;
+    width: 100%;
     height: 40px;
     background: green;
     display: inline-block;
@@ -37,7 +54,39 @@
   display: inline-flex;
 }
 
+.foo_new {
+  width: 33.333%;
+  height: 55px;
+  margin: 1px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  font-family: 'Caveat';
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.fool_new {
+width: 20%;
+height: 55px;
+margin: 1px;
+border: 1px solid rgba(0, 0, 0, .2);
+font-family: 'Caveat';
+font-size: 150%;
+font-weight: bold;
+}
+
+.foop_new {
+  width: 33.333%;
+  height: 60px;
+  margin: 1px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  display: inline-flex;
+}
+
 .fool:hover {
+  background-color: yellow;
+}
+
+.fool_new:hover {
   background-color: yellow;
 }
 
