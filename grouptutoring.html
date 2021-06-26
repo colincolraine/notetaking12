@@ -5,485 +5,742 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!--<script src="colin.js"></script>-->
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link rel = "stylesheet" href = "style.css">
+    <style>
+body { 
+    padding-top: 200px; 
+}
+
+        /*ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          position: fixed;
+       
+          top:10%;
+          left:37%;
+          right:37%;
+          background-color: white;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          padding: 13px;
+          background-color: white;
+        }*/
+
+        .fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 170px;
+  background-color: white;
+}
+
+/*.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+.main {
+  /*position: fixed;
+  top:10%;
+  left:34%;
+  right:34%;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;*/
+  /*display: block;*/
+  /*display: block;*/
+    /*display:table;*/
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;*/
+  /*margin-left: 25%;
+  margin-right: 25%;*/
+  position: fixed;
+          top: 11%;
+          background-color: rgb(21, 22, 22);
+}
+
+.main2 {
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+  position: fixed;
+          top: 17%;
+          background-color: rgb(21, 22, 22);
+}
+
+.trevor {
+  color: #fff;
+  background: rgb(255, 255, 255);
+  /*display:table-cell;*/
+  width: 20%;
+  height:100%;
+  float: left;
+  padding: 13px;
+  /*position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;*/
+}
+  
+li a {
+  color: rgb(9, 4, 88);
+  width: 100%;
+  font-family: 'Caveat';
+  font-size: 150%;
+  font-weight: bold;
+}
+
+li:hover,
+li:focus-within {
+  background: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  /*min-width: 5rem;*/
+  /*position: relative;*/
+  /*transition: all 0.5s ease;*/
+  width:100%;
+  /*margin-top: 1rem;*/
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  /*clear: both;
+  width: 100%;
+  height:6%;*/
+  /*min-width: 20rem;*/
+  /*list-style-type: none;
+  float:left;*/
+}
+
+.center {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+        </style>
 </head>
 <body>
-    <!--<nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">-->
-              <div style= "position: fixed; top: 5%; bottom: 90%; right: 0%; background-color: rgb(252, 252, 252);">
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Create Account</a></li>
-                <li><a href="/public/contact.html">Contact Us</a></li>
-              </div>
-              <div style= "position: fixed; top: 0%; bottom:70%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">
-                <div style= "position: fixed; top: 0%; bottom:80%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">
-                  <img src="Image 09-03-2021 at 13.18.jpeg" alt="Smiley face">
-                </div>
-                <div style= "position: fixed; top: 20%; bottom:50%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">
-                  <ul>
-                    <h2>4 simple steps</h2>
-                    <li>Sign In or Create Account</li>
-                    <li>Select Classes from table below</li>
-                    <li>Go to Checkout</li>
-                    <li>Receive confirmation email with link to Online Tuition</li>
-                  </ul>
-                </div>
-              </div>
-            <!--</a>
-          </div>
-        </div>
-    </nav>-->
-<div style= "position: fixed; top: 35%; bottom:10%; background-color: rgb(255, 255, 255);">
+    <!--<div style= "position: fixed; top: 1%; bottom:90%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">-->
+      <nav class="fixed-nav-bar">
+          <img src="OgilvieJerome.jpeg" alt="Smiley face" style= " 
+          display: block;
+          margin-left: 25%;
+          margin-right: 25%;
+          position:fixed;
+          top: 1%;
+          background-color: rgb(255, 255, 255);
+          width: 50%;
+          height: 13%">
+        <!--<div style= "position: fixed; left:1%; right: 1%; background-color: white">-->
+        <ul class="main">
+          <li class="trevor"><a href="draft.html">Home</a></li>
+          <li class="trevor"><a href="AboutUs.html">About Us</a></li>
+          <li class="trevor"><a href="grouptutoring.html">This week's classes</a></li>
+          <li class="trevor"><a>Full Curriculum</a>
+            <ul class="main2">
+              <li class="trevor"><a href = "p3curriculum.html">Primary 3</a></li>
+              <li class="trevor"><a href = "p4curriculum.html">Primary 4</a></li>
+              <li class="trevor"><a href = "p5curriculum.html">Primary 5</a></li>
+              <li class="trevor"><a href = "p6curriculum.html">Primary 6</a></li>
+              <li class="trevor"><a href = "p7curriculum.html">Primary 7</a></li>
+            </ul>
+          </li>
+          <li class="trevor"><a href="public/contact.html">Contact Us</a></li>
+        </ul>
+      
+        
+      
+      <div style= "position: fixed; top: 5%; bottom: 90%; right: 0%; background-color: rgb(252, 252, 252);">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Create Account</a></li>
+        <li><a href="public/contact.html">Contact Us</a></li>
+      </div>
+      
+    </nav>
+    <!--</a>
+  </div>
+</div>
+</nav>-->
+<!--<div style= "position: fixed; top: 35%; left: 5%; right: 5%; background-color: rgb(255, 255, 255);">-->
+    <div style="  display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;">    
+        <div style= " 
+        list-style-type: none;
+    padding:0;
+    width:50%;
+    height:10%;
+    margin-left: 25%;
+    margin-right: 25%;
+          background-color: rgb(255, 255, 255);
+          font-size: 120%;">
+            <ul>
+              <h2>4 simple steps</h2>
+              <li>Sign In or Create Account</li>
+              <li>Select Classes from table below</li>
+              <li>Go to Checkout</li>
+              <li>Receive confirmation email with link to Online Tuition</li>
+            </ul>
+       </div>       
+
+<div style= "display: block; margin-left: 0%; margin-right: 0%; width: 100%;">      
 <a href='#boxChild'><h2>This week's group classes</h2></a>
 <div class='box'>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foo"><p>Monday 1st</p></div>
-      <div class = "foo"><p>Tuesday 2nd</p></div>
-      <div class = "foo"><p>Wednesday 3rd</p></div>
-      <div class = "foo"><p>Thursday 4th</p></div>
-      <div class = "foo"><p>Friday 5th</p></div>
-      <div class = "foo"><p>Saturday 6th</p></div>
-  </div>
-  </div>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foop">
-        <div class= "fool"><p></p>4pm</div>
-        <div class= "fool"><p>4.40pm</p></div>
-        <div class= "fool"><p>5.20pm</p></div>
-        <div class= "fool"><p>6pm</p></div>
-        <div class= "fool"><p>6.40pm</p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p>4pm</div>
-        <div class= "fool"><p>4.40pm</p></div>
-        <div class= "fool"><p>5.20pm</p></div>
-        <div class= "fool"><p>6pm</p></div>
-        <div class= "fool"><p>6.40pm</p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p>4pm</div>
-        <div class= "fool"><p>4.40pm</p></div>
-        <div class= "fool"><p>5.20pm</p></div>
-        <div class= "fool"><p>6pm</p></div>
-        <div class= "fool"><p>6.40pm</p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p>4pm</div>
-        <div class= "fool"><p>4.40pm</p></div>
-        <div class= "fool"><p>5.20pm</p></div>
-        <div class= "fool"><p>6pm</p></div>
-        <div class= "fool"><p>6.40pm</p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p>4pm</div>
-        <div class= "fool"><p>4.40pm</p></div>
-        <div class= "fool"><p>5.20pm</p></div>
-        <div class= "fool"><p>6pm</p></div>
-        <div class= "fool"><p>6.40pm</p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p>7.30am</div>
-        <div class= "fool"><p>8.10am</p></div>
-        <div class= "fool"><p>8.50am</p></div>
-        <div class= "fool"><p>9.30am</p></div>
-        <div class= "fool"><p>10.10am</p></div>
-      </div>
-  </div>
-  </div>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foop">
-        <div class= "fool"></div>
-        <div class= "fool"><button onclick="myFunction1()">Estimation and rounding</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction2()">Grammar</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction3()">Estimation and rounding</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction4()">Grammar</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction5()">Estimation and rounding</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction6()">Grammar</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-  </div>
-  </div>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction7()">Number processes</button></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction8()">Writing</button></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction9()">Number processes</button></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction10()">Writing</button></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction11()">Number processes</button></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction12()">Writing</button></div>
-        <div class= "fool"><p></p></div>
-      </div>
-  </div>
-  </div>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction13()">Money</button></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction14()">Speaking</button></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction15()">Money</button></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction16()">Speaking</button></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction17()">Money</button></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction18()">Speaking</button></div>
-      </div>
-  </div>
-  </div>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction19()">Power and roots</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction20()">Reading</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction21()">Power and roots</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction22()">Reading</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction23()">Power and roots</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><button onclick="myFunction24()">Reading</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-  </div>
-  </div>
-  <div id='boxChild'>
-    <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
-      <div class = "foop">
-        <div class= "fool"><button onclick="myFunction25()">Fractions, decimals, percentages</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><button onclick="myFunction26()">Spelling</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><button onclick="myFunction27()">Fractions, decimals, percentages</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><button onclick="myFunction28()">Spelling</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><button onclick="myFunction29()">Fractions, decimals, percentages</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-      <div class = "foop">
-        <div class= "fool"><button onclick="myFunction30()">Spelling</button></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-        <div class= "fool"><p></p></div>
-      </div>
-  </div>
-  </div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foo"><p>Monday 1st</p></div>
+<div class = "foo"><p>Tuesday 2nd</p></div>
+<div class = "foo"><p>Wednesday 3rd</p></div>
 </div>
-<div style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
-  <p id="demo1"></p>
-  <p id="demo2"></p>
-  <p id="demo3"></p>
-  <p id="demo4"></p>
-  <p id="demo5"></p>
-  <p id="demo6"></p>
-  <p id="demo7"></p>
-  <p id="demo8"></p>
-  <p id="demo9"></p>
-  <p id="demo10"></p>
-  <p id="demo11"></p>
-  <p id="demo12"></p>
-  <p id="demo13"></p>
-  <p id="demo14"></p>
-  <p id="demo15"></p>
-  <p id="demo16"></p>
-  <p id="demo17"></p>
-  <p id="demo18"></p>
-  <p id="demo19"></p>
-  <p id="demo20"></p>
-  <p id="demo21"></p>
-  <p id="demo22"></p>
-  <p id="demo23"></p>
-  <p id="demo24"></p>
-  <p id="demo25"></p>
-  <p id="demo26"></p>
-  <p id="demo27"></p>
-  <p id="demo28"></p>
-  <p id="demo29"></p>
-  <p id="demo30"></p>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p>4pm</div>
+<div class= "fool"><p>4.40pm</p></div>
+<div class= "fool"><p>5.20pm</p></div>
+<div class= "fool"><p>6pm</p></div>
+<div class= "fool"><p>6.40pm</p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p>4pm</div>
+<div class= "fool"><p>4.40pm</p></div>
+<div class= "fool"><p>5.20pm</p></div>
+<div class= "fool"><p>6pm</p></div>
+<div class= "fool"><p>6.40pm</p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p>4pm</div>
+<div class= "fool"><p>4.40pm</p></div>
+<div class= "fool"><p>5.20pm</p></div>
+<div class= "fool"><p>6pm</p></div>
+<div class= "fool"><p>6.40pm</p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"></div>
+<div class= "fool"><a href="fractions.html">Estimation and rounding</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Grammar</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Estimation and rounding</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Number processes</a></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Writing</a></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Number processes</a></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Money</a></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Speaking</a></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Money</a></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Power and roots</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Reading</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Power and roots</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><a href="fractions.html">Fractions, decimals, percentages</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><a href="fractions.html">Spelling</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><a href="fractions.html">Fractions, decimals, percentages</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class='box'>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foo"><p>Thursday 4th</p></div>
+<div class = "foo"><p>Friday 5th</p></div>
+<div class = "foo"><p>Saturday 6th</p></div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p>4pm</div>
+<div class= "fool"><p>4.40pm</p></div>
+<div class= "fool"><p>5.20pm</p></div>
+<div class= "fool"><p>6pm</p></div>
+<div class= "fool"><p>6.40pm</p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p>4pm</div>
+<div class= "fool"><p>4.40pm</p></div>
+<div class= "fool"><p>5.20pm</p></div>
+<div class= "fool"><p>6pm</p></div>
+<div class= "fool"><p>6.40pm</p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p>4pm</div>
+<div class= "fool"><p>4.40pm</p></div>
+<div class= "fool"><p>5.20pm</p></div>
+<div class= "fool"><p>6pm</p></div>
+<div class= "fool"><p>6.40pm</p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"></div>
+<div class= "fool"><a href="fractions.html">Estimation and rounding</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Grammar</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Estimation and rounding</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Number processes</a></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Writing</a></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Number processes</a></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Money</a></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Speaking</a></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Money</a></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Power and roots</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Reading</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><a href="fractions.html">Power and roots</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop">
+<div class= "fool"><a href="fractions.html">Fractions, decimals, percentages</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><a href="fractions.html">Spelling</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+<div class = "foop">
+<div class= "fool"><a href="fractions.html">Fractions, decimals, percentages</a></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+<div class= "fool"><p></p></div>
+</div>
+</div>
+</div>
+</div>
+<!--<div style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<p id="demo17"></p>
+<p id="demo18"></p>
+<p id="demo19"></p>
+<p id="demo20"></p>
+<p id="demo21"></p>
+<p id="demo22"></p>
+<p id="demo23"></p>
+<p id="demo24"></p>
+<p id="demo25"></p>
+<p id="demo26"></p>
+<p id="demo27"></p>
+<p id="demo28"></p>
+<p id="demo29"></p>
+<p id="demo30"></p>
 </div>
 
-<!-- <div style= "border: 1px solid rgba(0, 0, 0, .2); width: 5%; margin-left: 45%; text-align: center;"><button style= "height: 40px";><p id="checkout"></p></button></div> -->
 <button style= "height: 40px; margin-left: 45%;"><p id="checkout"></p></button>
 
 <script>
 function myFunction1() {
-  document.getElementById("demo1").innerHTML = "Estimation and rounding";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo1").innerHTML = "Estimation and rounding";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction2() {
-  document.getElementById("demo2").innerHTML = "Grammar";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo2").innerHTML = "Grammar";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction3() {
-  document.getElementById("demo3").innerHTML = "Estimation and rounding";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo3").innerHTML = "Estimation and rounding";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction4() {
-  document.getElementById("demo4").innerHTML = "Grammar";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo4").innerHTML = "Grammar";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction5() {
-  document.getElementById("demo5").innerHTML = "Estimation and rounding";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo5").innerHTML = "Estimation and rounding";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction6() {
-  document.getElementById("demo6").innerHTML = "Grammar";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo6").innerHTML = "Grammar";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction7() {
-  document.getElementById("demo7").innerHTML = "Number processes";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo7").innerHTML = "Number processes";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction8() {
-  document.getElementById("demo8").innerHTML = "Writing";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo8").innerHTML = "Writing";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction9() {
-  document.getElementById("demo9").innerHTML = "Number processes";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo9").innerHTML = "Number processes";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction10() {
-  document.getElementById("demo10").innerHTML = "Writing";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo10").innerHTML = "Writing";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction11() {
-  document.getElementById("demo11").innerHTML = "Number processes";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo11").innerHTML = "Number processes";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction12() {
-  document.getElementById("demo12").innerHTML = "Writing";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo12").innerHTML = "Writing";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction13() {
-  document.getElementById("demo13").innerHTML = "Money";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo13").innerHTML = "Money";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction14() {
-  document.getElementById("demo14").innerHTML = "Speaking";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo14").innerHTML = "Speaking";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction15() {
-  document.getElementById("demo15").innerHTML = "Money";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo15").innerHTML = "Money";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction16() {
-  document.getElementById("demo16").innerHTML = "Speaking";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo16").innerHTML = "Speaking";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction17() {
-  document.getElementById("demo17").innerHTML = "Money";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo17").innerHTML = "Money";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction18() {
-  document.getElementById("demo18").innerHTML = "Speaking";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo18").innerHTML = "Speaking";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction19() {
-  document.getElementById("demo19").innerHTML = "Power and roots";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo19").innerHTML = "Power and roots";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction20() {
-  document.getElementById("demo20").innerHTML = "Reading";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo20").innerHTML = "Reading";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction21() {
-  document.getElementById("demo21").innerHTML = "Power and roots";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo21").innerHTML = "Power and roots";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction22() {
-  document.getElementById("demo22").innerHTML = "Reading";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo22").innerHTML = "Reading";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction23() {
-  document.getElementById("demo23").innerHTML = "Power and roots";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo23").innerHTML = "Power and roots";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction24() {
-  document.getElementById("demo24").innerHTML = "Reading";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo24").innerHTML = "Reading";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction25() {
-  document.getElementById("demo25").innerHTML = "Fractions, decimals, percentages";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo25").innerHTML = "Fractions, decimals, percentages";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction26() {
-  document.getElementById("demo26").innerHTML = "Spelling";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo26").innerHTML = "Spelling";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction27() {
-  document.getElementById("demo27").innerHTML = "Fractions, decimals, percentages";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo27").innerHTML = "Fractions, decimals, percentages";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction28() {
-  document.getElementById("demo28").innerHTML = "Spelling";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo28").innerHTML = "Spelling";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction29() {
-  document.getElementById("demo29").innerHTML = "Fractions, decimals, percentages";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo29").innerHTML = "Fractions, decimals, percentages";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
 function myFunction30() {
-  document.getElementById("demo30").innerHTML = "Spelling";
-  document.getElementById("checkout").innerHTML = "Checkout";
+document.getElementById("demo30").innerHTML = "Spelling";
+document.getElementById("checkout").innerHTML = "Checkout";
 }
-</script>
+</script>-->
 </div>
+</div>     
 </body>
 </html>
