@@ -32,6 +32,15 @@
     display: inline-block;
   }
 
+  #boxChild1_new {
+    /* margin: 600px 0 300px; */
+    margin: 0 0 2px;
+    width: 100%;
+    height: 70px;
+    background: green;
+    display: inline-block;
+  }
+
   .foo {
     width: 20%;
     height: 60px;
