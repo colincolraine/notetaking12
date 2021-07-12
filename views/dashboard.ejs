@@ -308,14 +308,14 @@ a[tabindex]:focus {
 <div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
 <div class = "foop_new">
 <div class= "fool_new"></div>
-<div class= "fool_new" onclick = "myFunction">Estimation and rounding</div>
+<div class= "fool_new" onclick = "myFunction(this)">Estimation and rounding</div>
 <div class= "fool_new"><p></p></div>
 <div class= "fool_new"><p></p></div>
 <div class= "fool_new"><p></p></div>
 </div>
 <div class = "foop_new">
 <div class= "fool_new"><p></p></div>
-<div class= "fool_new" onclick = "myFunction">Grammar</div>
+<div class= "fool_new" onclick = "myFunction(this)">Grammar</div>
 <div class= "fool_new"><p></p></div>
 <div class= "fool_new"><p></p></div>
 <div class= "fool_new"><p></p></div>
@@ -750,8 +750,8 @@ document.getElementById("checkout").innerHTML = "Checkout";
 </div>
 </div>
 <script>
-  function myFunction() {
-      this.style.background="#000000";
+  function myFunction(divObj) {
+      divObj.style.background="#000000";
   }
   </script>
 </body>
