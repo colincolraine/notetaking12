@@ -169,7 +169,3 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-.selected{
-  background-color: #861b1b;
-}
