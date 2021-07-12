@@ -108,6 +108,11 @@ app.use('/users', userRoutes)
 //    });
 //  });
 
+$(document).on('click','.fool', function(){
+    $('.fool').removeClass('selected');
+    $(this).addClass('selected');
+});
+
 app.listen(PORT, ()=>{
     console.log(`The app is running on http://localhost:${PORT}`)
 })
