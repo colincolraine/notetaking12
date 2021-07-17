@@ -590,7 +590,7 @@ a[tabindex]:focus {
 </div>
 </div>
 </div>
-<!--<div style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
+<div style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
@@ -625,7 +625,7 @@ a[tabindex]:focus {
 
 <button style= "height: 40px; margin-left: 45%;"><p id="checkout"></p></button>
 
-<script>
+<!--<script>
 function myFunction1() {
 document.getElementById("demo1").innerHTML = "Estimation and rounding";
 document.getElementById("checkout").innerHTML = "Checkout";
@@ -752,6 +752,7 @@ document.getElementById("checkout").innerHTML = "Checkout";
 <script>
   function myFunction(divObj) {
       divObj.style.background = "#33FF55";
+      document.getElementById("demo1").innerHTML = divObj.innerHTML;
   }
   </script>
 </body>
