@@ -95,6 +95,13 @@ font-weight: bold;
   background-color: yellow;
 }
 
+#button:hover {
+  filter: brightness(0.9);
+  /*background-color: darken(#2c3e50, 9%);*/
+  transition: .25s ease-in-out;
+  transform: scaleX(1.2) scaleY(1.2);
+}
+
 .fool_new:hover {
   background-color: yellow;
 }
