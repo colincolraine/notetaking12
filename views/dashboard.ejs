@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link rel = "stylesheet" href = "../style.css">
     <script src="../index.js"></script>
+    <script type="text/javascript" src="../script1.js"></script>
     <style>
 body { 
     padding-top: 200px; 
@@ -267,7 +268,7 @@ a[tabindex]:focus {
               <li>Go to Checkout</li>
               <li>Receive confirmation email with link to Online Tuition</li>
             </ul>
-            <button type="submit" id="button" style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(238, 238, 238); color: grey; border: none; color: white; border-radius: 12px;"><h1>Checkout</h1></button>
+            <button type="submit" id="button" onclick = "myAjax()" style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(238, 238, 238); color: grey; border: none; color: white; border-radius: 12px;"><h1>Checkout</h1></button>
        </div>       
 
 <div style= "display: block; margin-left: 0%; margin-right: 0%; width: 100%;">      
@@ -903,10 +904,10 @@ document.getElementById("checkout").innerHTML = "Checkout";
   }
   </script>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
   document.getElementById("button").onclick = function () {
       location.href = "../thank-you.html";
   };
-</script>
+</script>-->
 </body>
 </html>
