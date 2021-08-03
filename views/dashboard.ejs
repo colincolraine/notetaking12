@@ -913,7 +913,8 @@ document.getElementById("checkout").innerHTML = "Checkout";
     jsonObject.id = element.id;
     jsonObject.innerHTML = element.innerHTML;
 
-    var jsonString = JSON.stringify(jsonObject); // this is json for your div. 
+    var jsonString = JSON.stringify(jsonObject); // this is json for your div.
+    sessionStorage.setItem("jsonString", jsonString) 
 
     /// for append div and get div object back from json.
   
