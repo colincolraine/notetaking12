@@ -54,7 +54,7 @@ router.get('/thankyou', (req, res)=>{
     //res.render('dashboard', {firstName: req.body.firstName})
     //res.render('dashboard', {email: req.session.email})
     //res.render('thankyou', {email: req.session.email})
-    res.render('thankyou')
+    res.render('thankyou', {email: req.session.email})
     //res.render('thankyou', {jsonString: jsonString})
 })
 
