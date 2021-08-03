@@ -594,7 +594,7 @@ a[tabindex]:focus {
 </div>
 </div>
 </div>
-<div style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
+<div id="lettuce" style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
@@ -908,7 +908,29 @@ document.getElementById("checkout").innerHTML = "Checkout";
 
 <script type="text/javascript">
   document.getElementById("button").onclick = function () {
-      location.href = "../thank-you.html";
+    var element = document.getElementById("lettuce");
+    var jsonObject = {};
+    jsonObject.id = element.id;
+    jsonObject.innerHTML = element.innerHTML;
+
+    var jsonString = JSON.stringify(jsonObject); // this is json for your div. 
+
+    /// for append div and get div object back from json.
+  
+    //var elementProto = JSON.parse(jsonString);
+  
+    //var element = document.createElement("DIV");
+    //element.innerHTML = elementProto.innerHTML;
+    //element.id = elementProto.id;
+  
+  
+    // append to container (in your case its page 1 or 2)
+  
+    //document.getElementById("lettuce").append(element);
+    //document.getElementById("lettuce").append(jsonString);
+    
+    //location.href = "/users/thank-you";
+    location.href = "ogilviejerome.com/users/thank-you";
   };
 </script>
 </body>

@@ -45,6 +45,16 @@ router.get('/dashboard', (req, res)=>{
     res.render('dashboard', {email: req.session.email})
 })
 
+router.post('/thank-you', (req, res)=>{
+    //res.render(path.join(__dirname, 'dashboard.html'))
+    //res.sendFile(path.join(process.cwd() + '/dashboard.html'))
+    //res.render('dashboard')
+    //var middleName = "Colin"
+    //res.render('dashboard', {middleName: middleName})
+    //res.render('dashboard', {firstName: req.body.firstName})
+    res.render('thank-you', {jsonString: jsonString})
+})
+
 router.post('/login',
     passport.authenticate('local-login'),
     (req, res) => {

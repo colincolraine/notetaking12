@@ -9,6 +9,7 @@
     <script src="index.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link rel = "stylesheet" href = "style.css">
+    <script src="../index.js"></script>
     <style>
       body { 
           padding-top: 180px; 
@@ -250,6 +251,8 @@
               <br>
               <div style= "margin-left: 30%; margin-right: 30%; width: 40%;">
                 <p style = "font-family: 'Caveat'; font-size: 150%; font-weight: bold;">Your classes have been submitted.</p>
+                <p><%= jsonString %></p>
+                <!--<p><%-JSON.stringify(jsonString) %></p>-->
                 <p style = "font-family: 'Caveat'; font-size: 150%; font-weight: bold;">You will shortly receive a confirmation email with link to Online Tuition.</p>
             </div>
             </div>
