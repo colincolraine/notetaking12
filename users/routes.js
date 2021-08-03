@@ -46,13 +46,15 @@ router.get('/dashboard', (req, res)=>{
 })
 
 router.get('/thankyou', (req, res)=>{
-    var mascots = [
-        { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
-        { name: 'Tux', organization: "Linux", birth_year: 1996},
-        { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
-      ];
-    var tagline = "No programming concept is complete without a cute animal mascot.";
-    var jsonString = sessionStorage.getItem("jsonString");
+    jsonString = req.body.jsonString
+    //var mascots = [
+    //    { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
+    //    { name: 'Tux', organization: "Linux", birth_year: 1996},
+    //    { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
+    //  ];
+    //var tagline = "No programming concept is complete without a cute animal mascot.";
+    //var jsonString = sessionStorage.getItem("jsonString");
+    
     //res.render(path.join(__dirname, 'dashboard.html'))
     //res.sendFile(path.join(process.cwd() + '/dashboard.html'))
     //res.render('dashboard')
@@ -61,11 +63,7 @@ router.get('/thankyou', (req, res)=>{
     //res.render('dashboard', {firstName: req.body.firstName})
     //res.render('dashboard', {email: req.session.email})
     //res.render('thankyou', {email: req.session.email})
-    res.render('thankyou', {
-        mascots: mascots,
-        tagline: tagline,
-        jsonString: jsonString
-      })
+    res.render('thankyou')
     //res.render('thankyou', {jsonString: jsonString})
 })
 
