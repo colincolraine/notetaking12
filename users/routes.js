@@ -45,15 +45,16 @@ router.get('/dashboard', (req, res)=>{
     res.render('dashboard', {email: req.session.email})
 })
 
-router.get('/thank-you', (req, res)=>{
+router.get('/thankyou', (req, res)=>{
     //res.render(path.join(__dirname, 'dashboard.html'))
     //res.sendFile(path.join(process.cwd() + '/dashboard.html'))
     //res.render('dashboard')
     //var middleName = "Colin"
     //res.render('dashboard', {middleName: middleName})
     //res.render('dashboard', {firstName: req.body.firstName})
-    res.render('dashboard', {email: req.session.email})
-    //res.render('thank-you', {jsonString: jsonString})
+    //res.render('dashboard', {email: req.session.email})
+    res.render('thankyou', {email: req.session.email})
+    //res.render('thankyou', {jsonString: jsonString})
 })
 
 router.post('/login',
