@@ -8,252 +8,929 @@
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link rel = "stylesheet" href = "../style.css">
     <script src="../index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="../script1.js"></script>-->
     <style>
-      body { 
-          padding-top: 180px; 
-      }
-      
-              /*ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                position: fixed;
-             
-                top:10%;
-                left:37%;
-                right:37%;
-                background-color: white;
-              }
-              
-              li {
-                float: left;
-              }
-              
-              li a {
-                display: block;
-                padding: 13px;
-                background-color: white;
-              }*/
-      
-              .fixed-nav-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        width: 100%;
-        height: 170px;
-        background-color: white;
-      }
-      
-      /*.dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      .dropdown .dropbtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-      
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }*/
-      
-      
-      a {
-        text-decoration: none;
-      }
-      
-      nav {
-        font-family: monospace;
-      }
-      
-      .main {
-        /*position: fixed;
-        top:10%;
-        left:34%;
-        right:34%;
-        background-color: white;
-        list-style: none;
-        margin: 0;
-        padding-left: 0;*/
-        /*display: block;*/
-        /*display: block;*/
-          /*display:table;*/
+body { 
+    padding-top: 200px; 
+}
+
+        /*ul {
           list-style-type: none;
-          padding:0;
-          width:50%;
-          height:6%;
-          margin-left: 25%;
-          margin-right: 25%;
-          /*box-sizing:border-box;
-          -moz-box-sizing:border-box;
-          -webkit-box-sizing:border-box;*/
-        /*margin-left: 25%;
-        margin-right: 25%;*/
-        position: fixed;
-                top: 11%;
-                background-color: rgb(21, 22, 22);
-      }
-      
-      .main2 {
-          list-style-type: none;
-          padding:0;
-          width:50%;
-          height:6%;
-          margin-left: 25%;
-          margin-right: 25%;
-        position: fixed;
-                top: 17%;
-                background-color: rgb(21, 22, 22);
-      }
-      
-      .trevor {
-        color: #fff;
-        background: rgb(255, 255, 255);
-        /*display:table-cell;*/
-        width: 20%;
-        height:100%;
-        float: left;
-        padding: 13px;
-        /*position: relative;
-        text-decoration: none;
-        transition-duration: 0.5s;*/
-      }
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          position: fixed;
+       
+          top:10%;
+          left:37%;
+          right:37%;
+          background-color: white;
+        }
         
-      li a {
-        color: rgb(9, 4, 88);
-        width: 100%;
-        font-family: 'Caveat';
-        font-size: 150%;
-        font-weight: bold;
-      }
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          padding: 13px;
+          background-color: white;
+        }*/
+
+        .fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 170px;
+  background-color: white;
+}
+
+/*.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+.main {
+  /*position: fixed;
+  top:10%;
+  left:34%;
+  right:34%;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;*/
+  /*display: block;*/
+  /*display: block;*/
+    /*display:table;*/
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;*/
+  /*margin-left: 25%;
+  margin-right: 25%;*/
+  position: fixed;
+          top: 11%;
+          background-color: rgb(21, 22, 22);
+}
+
+.main2 {
+    list-style-type: none;
+    padding:0;
+    width:50%;
+    height:6%;
+    margin-left: 25%;
+    margin-right: 25%;
+  position: fixed;
+          top: 17%;
+          background-color: rgb(21, 22, 22);
+}
+
+.trevor {
+  color: #fff;
+  background: rgb(255, 255, 255);
+  /*display:table-cell;*/
+  width: 20%;
+  height:100%;
+  float: left;
+  padding: 13px;
+  /*position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;*/
+}
+  
+li a {
+  color: rgb(9, 4, 88);
+  width: 100%;
+  font-family: 'Caveat';
+  font-size: 150%;
+  font-weight: bold;
+}
+
+li:hover,
+li:focus-within {
+  background: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  /*min-width: 5rem;*/
+  /*position: relative;*/
+  /*transition: all 0.5s ease;*/
+  width:100%;
+  /*margin-top: 1rem;*/
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  /*clear: both;
+  width: 100%;
+  height:6%;*/
+  /*min-width: 20rem;*/
+  /*list-style-type: none;
+  float:left;*/
+}
+
+.center {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+a[tabindex]:focus {
+    color:green;
+    outline: none;
+}
+</style>
+</head>
+<body>
+    <!--<div style= "position: fixed; top: 1%; bottom:90%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">-->
+      <nav class="fixed-nav-bar">
+          <img src="../OgilvieJerome.jpeg" alt="Smiley face" style= " 
+          display: block;
+          margin-left: 25%;
+          margin-right: 25%;
+          position:fixed;
+          top: 1%;
+          background-color: rgb(255, 255, 255);
+          width: 50%;
+          height: 13%">
+        <!--<div style= "position: fixed; left:1%; right: 1%; background-color: white">-->
+        <ul class="main">
+          <li class="trevor"><a href="../index.html">Home</a></li>
+          <li class="trevor"><a href="../AboutUs.html">About Us</a></li>
+          <li class="trevor"><a href="../grouptutoring.html">This week's classes</a></li>
+          <li class="trevor"><a>Full Curriculum</a>
+            <ul class="main2">
+              <li class="trevor"><a href = "../p3curriculum.html">Primary 3</a></li>
+              <li class="trevor"><a href = "../p4curriculum.html">Primary 4</a></li>
+              <li class="trevor"><a href = "../p5curriculum.html">Primary 5</a></li>
+              <li class="trevor"><a href = "../p6curriculum.html">Primary 6</a></li>
+              <li class="trevor"><a href = "../p7curriculum.html">Primary 7</a></li>
+            </ul>
+          </li>
+          <li class="trevor"><a href="../public/contact.html">Contact Us</a></li>
+        </ul>
       
-      li:hover,
-      li:focus-within {
-        background: rgb(211, 211, 211);
-        cursor: pointer;
-      }
+        
       
-      li:focus-within a {
-        outline: none;
-      }
+      <div style= "position: fixed; top: 5%; bottom: 90%; right: 0%; background-color: rgb(252, 252, 252);">
+        <li><a href="../login.html">Login</a></li>
+        <li><a href="../register.html">Create Account</a></li>
+        <li><a href="../public/contact.html">Contact Us</a></li>
+      </div>
       
-      ul li ul {
-        background: orange;
-        visibility: hidden;
-        opacity: 0;
-        /*min-width: 5rem;*/
-        /*position: relative;*/
-        /*transition: all 0.5s ease;*/
-        width:100%;
-        /*margin-top: 1rem;*/
-        left: 0;
-        display: none;
-      }
-      
-      ul li:hover > ul,
-      ul li:focus-within > ul,
-      ul li ul:hover,
-      ul li ul:focus {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-      }
-      
-      ul li ul li {
-        /*clear: both;
-        width: 100%;
-        height:6%;*/
-        /*min-width: 20rem;*/
-        /*list-style-type: none;
-        float:left;*/
-      }
-      
-      .center {
-        display: block;
-        margin-left: 25%;
-        margin-right: 25%;
-        width: 50%;
-      }
-      
-      .center2 {
-        /*display: block;
-        margin-left: 25%;
-        margin-right: 25%;*/
-        width: 100%;
-      }
-      </style>
-      </head>
-      <body>
-          <!--<div style= "position: fixed; top: 1%; bottom:90%; left:30%; right: 30%; background-color: rgb(255, 255, 255);">-->
-            <nav class="fixed-nav-bar">
-                <img src="OgilvieJerome.jpeg" alt="Smiley face" style= " 
-                display: block;
-                margin-left: 25%;
-                margin-right: 25%;
-                position:fixed;
-                top: 1%;
-                background-color: rgb(255, 255, 255);
-                width: 50%;
-                height: 13%">
-              <!--<div style= "position: fixed; left:1%; right: 1%; background-color: white">-->
-              <ul class="main">
-                <li class="trevor"><a href="../index.html">Home</a></li>
-                <li class="trevor"><a href="../AboutUs.html">About Us</a></li>
-                <li class="trevor"><a href="../grouptutoring.html">This week's classes</a></li>
-                <li class="trevor"><a>Full Curriculum</a>
-                  <ul class="main2">
-                    <li class="trevor"><a href = "../p3curriculum.html">Primary 3</a></li>
-                    <li class="trevor"><a href = "../p4curriculum.html">Primary 4</a></li>
-                    <li class="trevor"><a href = "../p5curriculum.html">Primary 5</a></li>
-                    <li class="trevor"><a href = "../p6curriculum.html">Primary 6</a></li>
-                    <li class="trevor"><a href = "../p7curriculum.html">Primary 7</a></li>
-                  </ul>
-                </li>
-                <li class="trevor"><a href="../public/contact.html">Contact Us</a></li>
-              </ul>
-      
-              <div style= "position: fixed; top: 5%; bottom: 90%; right: 0%; background-color: rgb(252, 252, 252);">
-                <li><a href="../login.html">Login</a></li>
-                <li><a href="../register.html">Create Account</a></li>
-                <li><a href="../public/contact.html">Contact Us</a></li>
-              </div>
-            
-            </nav>
-            <div class = "center">
-              <!--<img src="Image 09-03-2021 at 13.18.jpeg" alt="Smiley face">-->
-              <br>
-              <br>
-              <br>
-              <br>
-              <div style= "margin-left: 30%; margin-right: 30%; width: 40%;">
-                <p style = "font-family: 'Caveat'; font-size: 150%; font-weight: bold;">Your classes have been submitted.</p>
-                <!--<p><%= email %></p>-->
-                <!--<p><%= jsonString %></p>-->
-                <!--<p><%-JSON.stringify(jsonString) %></p>-->
-                <p style = "font-family: 'Caveat'; font-size: 150%; font-weight: bold;">You will shortly receive a confirmation email with link to Online Tuition.</p>
-            </div>
-            </div>
+    </nav>
+    <!--</a>
+  </div>
+</div>
+</nav>-->
+<!--<div style= "position: fixed; top: 35%; left: 5%; right: 5%; background-color: rgb(255, 255, 255);">-->
+    <div style="  display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;">    
+        <div style= " 
+        list-style-type: none;
+    padding:0;
+    width:50%;
+    height:10%;
+    margin-left: 25%;
+    margin-right: 25%;
+          background-color: rgb(255, 255, 255);
+          font-size: 120%;">
+            <ul>
+              <h2>4 simple steps</h2>
+              <li>Sign In or Create Account</li>
+              <li>Select Classes from table below</li>
+              <li>Go to Checkout</li>
+              <li>Receive confirmation email with link to Online Tuition</li>
+            </ul>
+            <!--<button type="submit" id="button" onclick = "myAjax()" style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(238, 238, 238); color: grey; border: none; color: white; border-radius: 12px;"><h1>Checkout</h1></button>-->
+            <button type="submit" id="button" style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(238, 238, 238); color: grey; border: none; color: white; border-radius: 12px;"><h1>Checkout</h1></button>
+       </div>       
+
+<div style= "display: block; margin-left: 0%; margin-right: 0%; width: 100%;">      
+<a href='#boxChild_new'><h2>This week's group classes</h2></a>
+<div class='box_new'>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foo_new"><p>Monday 1st</p></div>
+<div class = "foo_new"><p>Tuesday 2nd</p></div>
+<div class = "foo_new"><p>Wednesday 3rd</p></div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p>4pm</div>
+<div class= "fool_new"><p>4.40pm</p></div>
+<div class= "fool_new"><p>5.20pm</p></div>
+<div class= "fool_new"><p>6pm</p></div>
+<div class= "fool_new"><p>6.40pm</p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p>4pm</div>
+<div class= "fool_new"><p>4.40pm</p></div>
+<div class= "fool_new"><p>5.20pm</p></div>
+<div class= "fool_new"><p>6pm</p></div>
+<div class= "fool_new"><p>6.40pm</p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p>4pm</div>
+<div class= "fool_new"><p>4.40pm</p></div>
+<div class= "fool_new"><p>5.20pm</p></div>
+<div class= "fool_new"><p>6pm</p></div>
+<div class= "fool_new"><p>6.40pm</p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"></div>
+<div class= "fool_new" onclick = "myFunction1(this)">Estimation and rounding</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction2(this)">Grammar</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction3(this)">Estimation and rounding</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction4(this)">Number processes</div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction5(this)">Writing</div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction6(this)">Number processes</div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction7(this)">Money</div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction8(this)">Speaking</div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction9(this)">Money</div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction10(this)">Power and roots</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction11(this)">Reading</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction12(this)">Power and roots</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new" onclick = "myFunction13(this)">Fractions, decimals, percentages</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new" onclick = "myFunction14(this)">Spelling</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new" onclick = "myFunction15(this)">Fractions, decimals, percentages</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class='box_new'>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foo_new"><p>Thursday 4th</p></div>
+<div class = "foo_new"><p>Friday 5th</p></div>
+<div class = "foo_new"><p>Saturday 6th</p></div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p>4pm</div>
+<div class= "fool_new"><p>4.40pm</p></div>
+<div class= "fool_new"><p>5.20pm</p></div>
+<div class= "fool_new"><p>6pm</p></div>
+<div class= "fool_new"><p>6.40pm</p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p>4pm</div>
+<div class= "fool_new"><p>4.40pm</p></div>
+<div class= "fool_new"><p>5.20pm</p></div>
+<div class= "fool_new"><p>6pm</p></div>
+<div class= "fool_new"><p>6.40pm</p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p>4pm</div>
+<div class= "fool_new"><p>4.40pm</p></div>
+<div class= "fool_new"><p>5.20pm</p></div>
+<div class= "fool_new"><p>6pm</p></div>
+<div class= "fool_new"><p>6.40pm</p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"></div>
+<div class= "fool_new" onclick = "myFunction16(this)">Estimation and rounding</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction17(this)">Grammar</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction18(this)">Estimation and rounding</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction19(this)">Number processes</div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction20(this)">Writing</div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction21(this)">Number processes</div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction22(this)">Money</div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction23(this)">Speaking</div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction24(this)">Money</div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction25(this)">Power and roots</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction26(this)">Reading</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new" onclick = "myFunction27(this)">Power and roots</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+<div id='boxChild_new'>
+<div style="width: 100%; background: aqua; display:inline-flex; text-align: center;">
+<div class = "foop_new">
+<div class= "fool_new" onclick = "myFunction28(this)">Fractions, decimals, percentages</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new" onclick = "myFunction29(this)">Spelling</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+<div class = "foop_new">
+<div class= "fool_new" onclick = "myFunction30(this)">Fractions, decimals, percentages</div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+<div class= "fool_new"><p></p></div>
+</div>
+</div>
+</div>
+</div>
+<div id="lettuce" style= "background-color: aqua; border: 1px solid rgba(0, 0, 0, .2); width: 50%;">
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<p id="demo17"></p>
+<p id="demo18"></p>
+<p id="demo19"></p>
+<p id="demo20"></p>
+<p id="demo21"></p>
+<p id="demo22"></p>
+<p id="demo23"></p>
+<p id="demo24"></p>
+<p id="demo25"></p>
+<p id="demo26"></p>
+<p id="demo27"></p>
+<p id="demo28"></p>
+<p id="demo29"></p>
+<p id="demo30"></p>
+</div>
+
+<!--<button style= "height: 40px; margin-left: 45%;"><p id="checkout"></p></button>-->
+
+<!--<script>
+function myFunction1() {
+document.getElementById("demo1").innerHTML = "Estimation and rounding";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction2() {
+document.getElementById("demo2").innerHTML = "Grammar";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction3() {
+document.getElementById("demo3").innerHTML = "Estimation and rounding";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction4() {
+document.getElementById("demo4").innerHTML = "Grammar";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction5() {
+document.getElementById("demo5").innerHTML = "Estimation and rounding";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction6() {
+document.getElementById("demo6").innerHTML = "Grammar";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction7() {
+document.getElementById("demo7").innerHTML = "Number processes";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction8() {
+document.getElementById("demo8").innerHTML = "Writing";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction9() {
+document.getElementById("demo9").innerHTML = "Number processes";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction10() {
+document.getElementById("demo10").innerHTML = "Writing";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction11() {
+document.getElementById("demo11").innerHTML = "Number processes";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction12() {
+document.getElementById("demo12").innerHTML = "Writing";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction13() {
+document.getElementById("demo13").innerHTML = "Money";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction14() {
+document.getElementById("demo14").innerHTML = "Speaking";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction15() {
+document.getElementById("demo15").innerHTML = "Money";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction16() {
+document.getElementById("demo16").innerHTML = "Speaking";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction17() {
+document.getElementById("demo17").innerHTML = "Money";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction18() {
+document.getElementById("demo18").innerHTML = "Speaking";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction19() {
+document.getElementById("demo19").innerHTML = "Power and roots";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction20() {
+document.getElementById("demo20").innerHTML = "Reading";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction21() {
+document.getElementById("demo21").innerHTML = "Power and roots";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction22() {
+document.getElementById("demo22").innerHTML = "Reading";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction23() {
+document.getElementById("demo23").innerHTML = "Power and roots";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction24() {
+document.getElementById("demo24").innerHTML = "Reading";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction25() {
+document.getElementById("demo25").innerHTML = "Fractions, decimals, percentages";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction26() {
+document.getElementById("demo26").innerHTML = "Spelling";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction27() {
+document.getElementById("demo27").innerHTML = "Fractions, decimals, percentages";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction28() {
+document.getElementById("demo28").innerHTML = "Spelling";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction29() {
+document.getElementById("demo29").innerHTML = "Fractions, decimals, percentages";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+function myFunction30() {
+document.getElementById("demo30").innerHTML = "Spelling";
+document.getElementById("checkout").innerHTML = "Checkout";
+}
+</script>-->
+</div>
+</div>
+<script>
+  function myFunction1(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo1").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction2(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo2").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction3(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo3").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction4(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo4").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction5(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo5").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction6(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo6").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction7(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo7").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction8(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo8").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction9(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo9").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction10(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo10").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction11(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo11").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction12(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo12").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction13(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo13").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction14(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo14").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction15(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo15").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction16(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo16").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction17(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo17").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction18(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo18").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction19(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo19").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction20(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo20").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction21(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo21").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction22(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo22").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction23(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo23").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction24(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo24").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction25(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo25").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction26(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo26").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction27(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo27").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction28(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo28").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction29(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo29").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  function myFunction30(divObj) {
+      divObj.style.background = "#33FF55";
+      document.getElementById("demo30").innerHTML = divObj.innerHTML;
+      document.getElementById("button").style= "font-family: 'Caveat'; font-size: 100%; font-weight: bold; margin-left: 85%; margin-right: 15%; padding: 1px 32px; background-color: rgb(0, 200, 0); color: grey; border: none; color: white; border-radius: 12px;"
+  }
+  </script>
+
+<script type="text/javascript">
+  document.getElementById("button").onclick = function () {
+    var element = document.getElementById("lettuce");
+    var jsonObject = {};
+    jsonObject.id = element.id;
+    jsonObject.innerHTML = element.innerHTML;
+
+    var jsonString = JSON.stringify(jsonObject); // this is json for your div. 
+
+    /// for append div and get div object back from json.
+  
+    //var elementProto = JSON.parse(jsonString);
+  
+    //var element = document.createElement("DIV");
+    //element.innerHTML = elementProto.innerHTML;
+    //element.id = elementProto.id;
+  
+  
+    // append to container (in your case its page 1 or 2)
+  
+    //document.getElementById("lettuce").append(element);
+    //document.getElementById("lettuce").append(jsonString);
+    
+    //location.href = "/users/thank-you";
+    location.href = "thankyou";
+  };
+</script>
 </body>
 </html>
