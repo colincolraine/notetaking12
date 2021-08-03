@@ -47,7 +47,9 @@ router.get('/dashboard', (req, res)=>{
 
 router.get('/thankyou', (req, res)=>{
     jsonString = req.body.jsonString
-    //var mascots = [
+    res.render('thankyou', {
+        jsonString: jsonString
+      })
     //    { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
     //    { name: 'Tux', organization: "Linux", birth_year: 1996},
     //    { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
@@ -63,7 +65,7 @@ router.get('/thankyou', (req, res)=>{
     //res.render('dashboard', {firstName: req.body.firstName})
     //res.render('dashboard', {email: req.session.email})
     //res.render('thankyou', {email: req.session.email})
-    res.render('thankyou')
+    
     //res.render('thankyou', {jsonString: jsonString})
 })
 

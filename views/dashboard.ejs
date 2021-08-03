@@ -913,7 +913,8 @@ document.getElementById("checkout").innerHTML = "Checkout";
     jsonObject.id = element.id;
     jsonObject.innerHTML = element.innerHTML;
 
-    var jsonString = JSON.stringify(jsonObject); // this is json for your div.  
+    var jsonString = JSON.stringify(jsonObject); // this is json for your div.
+    location.href = "thankyou";  
     //sessionStorage.setItem("jsonString", JSON.stringify(jsonObject)) 
 
     /// for append div and get div object back from json.
@@ -931,7 +932,6 @@ document.getElementById("checkout").innerHTML = "Checkout";
     //document.getElementById("lettuce").append(jsonString);
     
     //location.href = "/users/thank-you";
-    location.href = "thankyou";
   };
 </script>
 </body>
