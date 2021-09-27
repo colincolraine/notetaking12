@@ -45,11 +45,12 @@ router.get('/dashboard', (req, res)=>{
     res.render('dashboard', {email: req.session.email})
 })
 
-router.get('/thankyou', (req, res)=>{
-    jsonString = req.body.jsonString
-    res.render('thankyou', {
-        jsonString: jsonString
-      })
+router.post('/thankyou', (req, res)=>{
+    console.log(request);
+    //jsonString = req.body.jsonString
+    //res.render('thankyou', {
+      //  jsonString: jsonString
+      //})
     //    { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
     //    { name: 'Tux', organization: "Linux", birth_year: 1996},
     //    { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
@@ -67,6 +68,10 @@ router.get('/thankyou', (req, res)=>{
     //res.render('thankyou', {email: req.session.email})
     
     //res.render('thankyou', {jsonString: jsonString})
+    //res.render('thankyou', {
+    //    mascots: mascots,
+    //    tagline: tagline
+    //  });
 })
 
 router.post('/login',

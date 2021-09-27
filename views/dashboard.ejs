@@ -914,7 +914,15 @@ document.getElementById("checkout").innerHTML = "Checkout";
     jsonObject.innerHTML = element.innerHTML;
 
     var jsonString = JSON.stringify(jsonObject); // this is json for your div.
-    location.href = "thankyou";  
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(jsonObject)
+    }
+    fetch('/thankyou', options);
+    //location.href = "thankyou";  
     //sessionStorage.setItem("jsonString", JSON.stringify(jsonObject)) 
 
     /// for append div and get div object back from json.
