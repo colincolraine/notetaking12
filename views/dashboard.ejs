@@ -913,14 +913,16 @@ document.getElementById("checkout").innerHTML = "Checkout";
     jsonObject.innerHTML = element.innerHTML;
 
     var jsonString = JSON.stringify(jsonObject); // this is json for your div.
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: jsonString
-    }
-    fetch('/users/thankyou', options);
+    console.log(jsonString)
+    //const options = {
+      //method: 'POST',
+      //headers: {
+        //'Content-Type': 'application/json'
+      //},
+      //body: jsonString
+    //}
+    //fetch('/users/thankyou', options);
+    
     //location.href = "thankyou";  
     //sessionStorage.setItem("jsonString", JSON.stringify(jsonObject)) 
 
