@@ -46,8 +46,8 @@ router.get('/dashboard', (req, res)=>{
 })
 
 router.post('/thankyou', (req, res)=>{
+    res.render('thankyou')
     //console.log(request);
-    res.redirect('/views/thankyou')
     //jsonString = req.body.jsonString
     //res.render('thankyou', {
       //  jsonString: jsonString

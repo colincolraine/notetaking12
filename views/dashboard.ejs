@@ -918,7 +918,7 @@ document.getElementById("checkout").innerHTML = "Checkout";
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(jsonObject)
+      body: jsonString
     }
     fetch('/users/thankyou', options);
     //location.href = "thankyou";  
