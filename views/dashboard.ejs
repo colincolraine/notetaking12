@@ -914,13 +914,14 @@ document.getElementById("checkout").innerHTML = "Checkout";
 
     var jsonString = JSON.stringify(jsonObject); // this is json for your div.
     console.log(jsonString)
-    //const options = {
-      //method: 'POST',
-      //headers: {
-        //'Content-Type': 'application/json'
-      //},
-      //body: jsonString
-    //}
+    var options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: jsonString
+    }
+    console.log(options)
     //fetch('/users/thankyou', options);
     
     //location.href = "thankyou";  
