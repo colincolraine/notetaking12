@@ -913,7 +913,6 @@ document.getElementById("checkout").innerHTML = "Checkout";
     jsonObject.innerHTML = element.innerHTML;
 
     var jsonString = JSON.stringify(jsonObject); // this is json for your div.
-    console.log(process.cwd())
     
     const options = {
       method: 'POST',
@@ -923,7 +922,7 @@ document.getElementById("checkout").innerHTML = "Checkout";
       body: jsonString
     }
 
-    fetch(process.cwd() + '/users/thankyou', options);
+    fetch('../users/thankyou', options);
     
     //location.href = "thankyou";  
     //sessionStorage.setItem("jsonString", JSON.stringify(jsonObject)) 
