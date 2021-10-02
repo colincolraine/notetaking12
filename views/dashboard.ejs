@@ -919,7 +919,7 @@ document.getElementById("checkout").innerHTML = "Checkout";
       headers: {
         'Content-Type': 'application/json'
       },
-      body: jsonString
+      body: JSON.stringify(jsonObject)
     }
 
     fetch('../users/thankyou', options);

@@ -6,6 +6,7 @@ const Chance = require('chance')
 const chance = new Chance()
 var path = require('path')
 const passport = require('../auth')
+const fetch = require('node-fetch')
 
 //router.get('/checkout', (req, res) => {
     //put checkout.php in here
