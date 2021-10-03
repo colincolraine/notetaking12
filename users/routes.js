@@ -6,7 +6,7 @@ const Chance = require('chance')
 const chance = new Chance()
 var path = require('path')
 const passport = require('../auth')
-const fetch = require('node-fetch')
+//const fetch = require('node-fetch')
 
 //router.get('/checkout', (req, res) => {
     //put checkout.php in here
@@ -46,8 +46,9 @@ router.get('/dashboard', (req, res)=>{
     res.render('dashboard', {email: req.session.email})
 })
 
-router.post('/thankyou', (req, res)=>{
+router.post('/thankyou', (request, response)=>{
     //res.render('thankyou')
+    console.log('I got a request');
     console.log(request);
     //jsonString = req.body.jsonString
     //res.render('thankyou', {
