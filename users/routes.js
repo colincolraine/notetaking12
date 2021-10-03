@@ -49,8 +49,8 @@ router.get('/dashboard', (req, res)=>{
 router.post('/thankyou', (request, response)=>{
     //res.render('thankyou')
     console.log('I got a request');
-    response.render('dashboard', {email: req.session.email})
-    //console.log(request);
+    //response.render('dashboard', {email: req.session.email})
+    console.log(request);
     //jsonString = req.body.jsonString
     //res.render('thankyou', {
       //  jsonString: jsonString
