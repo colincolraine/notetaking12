@@ -47,9 +47,8 @@ router.get('/dashboard', (req, res)=>{
 })
 
 router.post('/thankyou', (request, response)=>{
-    //console.log('I got a request');
-    //console.log(request);
-    res.render('thankyou')
+    console.log('I got a request');
+    console.log(request);
     
     //jsonString = req.body.jsonString
     //res.render('thankyou', {
