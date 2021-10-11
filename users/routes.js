@@ -63,7 +63,7 @@ from: 'amdcolraine777@gmail.com',
 to: 'amdcolraine777@gmail.com',
 subject: 'These are the choices',
 //You can pass HTML as well. In order to pass html replace text with html.
-html: <html>${JSON.stringify(data)}</html>
+html: '<html>${JSON.stringify(data)}</html>'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
@@ -74,7 +74,7 @@ console.log('Email sent: ' + info.response);
 }
 });
 return response.json("Success");
-    
+})
     //jsonString = req.body.jsonString
     //res.render('thankyou', {
       //  jsonString: jsonString
@@ -100,7 +100,7 @@ return response.json("Success");
     //    mascots: mascots,
     //    tagline: tagline
     //  });
-})
+
 
 router.post('/login',
     passport.authenticate('local-login'),
