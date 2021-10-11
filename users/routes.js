@@ -6,6 +6,7 @@ const Chance = require('chance')
 const chance = new Chance()
 var path = require('path')
 const passport = require('../auth')
+const nodemailer = require("nodemailer")
 //const fetch = require('node-fetch')
 
 //router.get('/checkout', (req, res) => {
@@ -48,7 +49,31 @@ router.get('/dashboard', (req, res)=>{
 
 router.post('/thankyou', (request, response)=>{
     console.log('I got a request');
-    console.log(request);
+    const data = request.body.innerHTML;
+
+let transporter = nodemailer.createTransport({
+service: 'gmail',
+auth: {
+user: 'amdcolraine777@gmail.com',
+pass: 'Christopher/1933/AMDG'
+}
+});
+let mailOptions = {
+from: 'amdcolraine777@gmail.com',
+to: 'amdcolraine777@gmail.com',
+subject: 'These are the choices',
+//You can pass HTML as well. In order to pass html replace text with html.
+html: <html>${JSON.stringify(data)}</html>
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+if (error) {
+console.log(error);
+} else {
+console.log('Email sent: ' + info.response);
+}
+});
+return response.json("Success");
     
     //jsonString = req.body.jsonString
     //res.render('thankyou', {
