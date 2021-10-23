@@ -7,12 +7,6 @@ const chance = new Chance()
 var path = require('path')
 const passport = require('../auth')
 const nodemailer = require("nodemailer")
-//const fetch = require('node-fetch')
-
-//router.get('/checkout', (req, res) => {
-    //put checkout.php in here
-//    res.sendFile(path.join(process.cwd() + '/checkout.html'))
-//})
 
 router.post('/checkout', (req, res, next)=>{
     const newUser2 = new UserModel2({
@@ -63,7 +57,7 @@ from: 'amdcolraine777@gmail.com',
 to: 'amdcolraine777@gmail.com',
 subject: 'These are the choices',
 //You can pass HTML as well. In order to pass html replace text with html.
-html: '<html>${JSON.stringify(data)}</html>'
+html: `<html>${JSON.stringify(data)}</html>`
 };
 
 transporter.sendMail(mailOptions, function(error, info){
